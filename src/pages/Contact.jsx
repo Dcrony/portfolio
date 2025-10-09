@@ -1,8 +1,10 @@
+import "../css/contact.css"
+
 function Contact() {
   return (
     <div className="unslate_co--section" id="contact-section">
       <div className="container">
-        <div className="section-heading-wrap text-center mb-5">
+        <div className="text-center mb-5">
           <h2 className="heading-h2 text-center divider">
             <span className="gsap-reveal">Get In Touch</span>
           </h2>
@@ -13,7 +15,7 @@ function Contact() {
 
         <div className="row justify-content-between">
           <div className="col-md-6">
-            <form id="contactForm" method="POST">
+            <form className="form-outline-style-v1" id="contactForm" method="POST">
               <div className="form-group row mb-0">
                 <div className="col-lg-6 form-group gsap-reveal">
                   <label htmlFor="name">Name</label>

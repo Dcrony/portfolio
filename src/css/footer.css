@@ -1,0 +1,48 @@
+footer {
+  background-color: #191919;
+  height: 320px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+ 
+}
+
+@media (max-width: 991.98px) {
+  
+}
+
+footer .footer-site-logo {
+  margin-bottom: 60px;
+}
+
+footer .footer-site-logo a {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+footer .footer-site-logo a span {
+  color: #28a745;
+  font-size: 4rem;
+}
+
+@media (width: 900px) {
+  .social {
+    display: block;
+  }
+}
+
+footer .social a {
+  color: #8a8282;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+footer .social a:hover {
+  color: #d6d3d3;
+}
+
+footer .site-copyright {
+  margin-top: 100px;
+  color: #8a8282;
+}

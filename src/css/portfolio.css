@@ -1,0 +1,383 @@
+.filter-wrap {
+  position: relative;
+}
+
+.filter-wrap .filter {
+  font-size: 14px;
+  color: #fff;
+}
+
+.filter-wrap .filter a {
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.filter-wrap .filter a:hover {
+  color: #fff;
+}
+
+.filter-wrap .filter a.active {
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .filter-wrap .filter {
+    background: #000;
+    z-index: 9;
+    position: absolute;
+    min-width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    right: 0;
+    padding: 20px;
+    top: 10px;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  .filter-wrap .filter.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .filter-wrap .filter a {
+    display: block;
+  }
+}
+
+.portfolio-item {
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+  position: relative;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.portfolio-item:hover img {
+  -webkit-transform: scale(1.09);
+  -ms-transform: scale(1.09);
+  transform: scale(1.09);
+}
+
+.portfolio-item,
+.blog-item {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-item .overlay,
+.blog-item .overlay {
+  position: relative;
+  z-index: 8;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.portfolio-item .overlay,
+.portfolio-item .overlay:before,
+.blog-item .overlay,
+.blog-item .overlay:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.portfolio-item .overlay:before,
+.blog-item .overlay:before {
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+}
+
+.portfolio-item .wrap-icon,
+.blog-item .wrap-icon {
+  position: absolute;
+  right: 20px;
+  color: #fff;
+  top: 20px;
+}
+
+.portfolio-item .portfolio-item-content,
+.blog-item .portfolio-item-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.portfolio-item .portfolio-item-content h3,
+.portfolio-item .portfolio-item-content p,
+.blog-item .portfolio-item-content h3,
+.blog-item .portfolio-item-content p {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-item .portfolio-item-content h3,
+.blog-item .portfolio-item-content h3 {
+  font-size: 18px;
+}
+
+.portfolio-item .portfolio-item-content p,
+.blog-item .portfolio-item-content p {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Arimo", sans-serif;
+}
+
+.portfolio-item .img-fluid{
+  width: 100%;
+}
+
+.portfolio-item:hover .overlay,
+.blog-item:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* --- Tool Tags --- */
+.project-tools {
+  margin-top: 10px;
+}
+
+.tool-tag {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  transition: background 0.3s;
+}
+
+.tool-tag:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* --- Modal Styling --- */
+.modal-overlay {
+  position: fixed;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: #fff;
+  color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  animation: fadeInUp 0.3s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-content h2 {
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  font-size: 15px;
+  color: #555;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}/* ========== Tools Tags ========== */
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 0 15px;
+  background: #fff;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 16px 16px;
+}
+
+.tool-tag {
+  background-color: #efefef;
+  color: #333;
+  font-size: 13px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* ========== Modal Styles ========== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 640px;
+  width: 90%;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  animation: scaleIn 0.35s ease forwards;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-content h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal-content h4 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.modal-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content ul li {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.modal-content a {
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.modal-content a:hover {
+  background-color: #333;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 1.6rem;
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+/* ========== Animations ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 768px) {
+  .section-heading-wrap h2 {
+    font-size: 2rem;
+  }
+
+  .portfolio-item{
+    margin-top: 20px;
+  }
+
+  .portfolio-item img {
+    height: 200px;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+}

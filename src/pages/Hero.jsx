@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/hero.css"
 
 export default function Hero() {
   return (
@@ -9,11 +10,11 @@ export default function Hero() {
       }}
       id="home-section"
     >
-      <div class="container">
-            <div class="row align-items-center tst">
-              <div class="cont col-md-10 mx-auto text-center">
-                <h1 class="heading gap-reveal-hero">Dcrony</h1>
-                <h2 class="subheading gap-reveal-hero">
+      <div className="container">
+            <div className="row align-items-center tst">
+              <div className="cont col-md-10 mx-auto text-center">
+                <h1 className="heading gap-reveal-hero">Dcrony</h1>
+                <h2 className="subheading gap-reveal-hero">
                   I’m Ibrahim Abdulmajeed <br />
                   A Full-Stack Web Developer
                   <br />
@@ -22,13 +23,13 @@ export default function Hero() {
                 <p>
                   <a
                     href="images/dcronyresume.pdf"
-                    class="btn btn-outline-pill btn-custom-light"
+                    className="btn btn-outline-pill btn-custom-light"
                     target="_blank"
                     >Download Resume</a
                   >
                   <a
                     href="#contact-section"
-                    class="btn btn-outline-pill btn-custom-light"
+                    className="btn btn-outline-pill btn-custom-light"
                     >Hire Me</a
                   >
                 </p>
@@ -37,18 +38,14 @@ export default function Hero() {
           </div>
 
       {/* Animated lines overlay */}
-      <a href="#portfolio-section" className="mouse-wrap smoothscroll">
+      <a href="#about-section" className="mouse-wrap">
         <span className="mouse">
           <span className="scroll"></span>
         </span>
         <span className="mouse-label">Scroll</span>
       </a>
 
-      <div className="lines-wrap">
-        <div className="lines-inner">
-          <div className="lines"></div>
-        </div>
-      </div>
+     
     </div>
   );
 }

@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // AOS styles (you can customize via your own CSS)
 // import emailjs from "@emailjs/browser"; // optional (install @emailjs/browser) — or keep CDN
 
-import "./App.css";
 
 import Navbar from "./components/Navbar";
 import Hero from "./pages/Hero";
@@ -15,6 +14,7 @@ import Testimonials from "./pages/Testimonials";
 import Journal from "./pages/Journal";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+
 
 function App() {
   // Global UI state: offcanvas/mobile menu

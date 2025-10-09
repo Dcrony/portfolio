@@ -21,7 +21,11 @@ export default function Services() {
           <div className="col-md-6 col-lg-4 mb-4">
             <div className="feature-v1 gsap-reveal">
               <div className="wrap-icon mb-3">
-                <i className="icon-laptop"></i>
+                <img
+                      src="src/assets/images/svg/004-percentage.svg"
+                      alt="Image"
+                      width="45"
+                    />
               </div>
               <h3>Web Development</h3>
               <p>
@@ -34,7 +38,12 @@ export default function Services() {
           <div className="col-md-6 col-lg-4 mb-4">
             <div className="feature-v1 gsap-reveal">
               <div className="wrap-icon mb-3">
-                <i className="icon-mobile"></i>
+                <img
+                      src="src/assets/images/svg/001-options.svg"
+                      alt="Image"
+                      width="45"
+                    />
+                
               </div>
               <h3>Mobile App Development</h3>
               <p>
@@ -47,7 +56,11 @@ export default function Services() {
           <div className="col-md-6 col-lg-4 mb-4">
             <div className="feature-v1 gsap-reveal">
               <div className="wrap-icon mb-3">
-                <i className="icon-shopping-cart"></i>
+                <img
+                      src="src/assets/images/svg/006-goal.svg"
+                      alt="Image"
+                      width="45"
+                    />
               </div>
               <h3>E-Commerce Solutions</h3>
               <p>
@@ -60,7 +73,11 @@ export default function Services() {
           <div className="col-md-6 col-lg-4 mb-4">
             <div className="feature-v1 gsap-reveal">
               <div className="wrap-icon mb-3">
-                <i className="icon-line-chart"></i>
+                <img
+                      src="src/assets/images/svg/005-line-chart.svg"
+                      alt="Image"
+                      width="45"
+                    />
               </div>
               <h3>SEO &amp; Optimization</h3>
               <p>
@@ -73,7 +90,11 @@ export default function Services() {
           <div className="col-md-6 col-lg-4 mb-4">
             <div className="feature-v1 gsap-reveal">
               <div className="wrap-icon mb-3">
-                <i className="icon-lock"></i>
+                <img
+                      src="src/assets/images/svg/002-chat.svg"
+                      alt="Image"
+                      width="45"
+                    />
               </div>
               <h3>Secure Web Solutions</h3>
               <p>
@@ -86,7 +107,11 @@ export default function Services() {
           <div className="col-md-6 col-lg-4 mb-4">
             <div className="feature-v1 gsap-reveal">
               <div className="wrap-icon mb-3">
-                <i className="icon-support"></i>
+                <img
+                      src="src/assets/images/svg/003-contact-book.svg"
+                      alt="Image"
+                      width="45"
+                    />
               </div>
               <h3>Maintenance &amp; Support</h3>
               <p>
