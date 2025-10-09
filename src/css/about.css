@@ -1,0 +1,145 @@
+/* ===========================
+   About Section (Same Theme)
+=========================== */
+
+.about-section {
+  background: var(--color-bg-dark);
+  color: var(--color-text-light);
+  padding: var(--section-padding);
+  font-family: var(--font-main);
+}
+
+/* ===== Section Heading ===== */
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.divider-img {
+  width: 80px;
+  opacity: 0.8;
+}
+
+/* ===== Layout ===== */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ===== Image ===== */
+.about-image {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  border: 2px solid var(--color-secondary);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ===== Text ===== */
+.about-text {
+  flex: 1 1 500px;
+  line-height: 1.8;
+  font-size: var(--font-size-body);
+  color: var(--color-text-muted);
+}
+
+.about-text strong {
+  color: var(--color-primary);
+}
+
+.about-text p {
+  margin-bottom: 18px;
+}
+
+/* ===== Buttons ===== */
+.about-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+/* Solid button */
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-bg-dark);
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-secondary);
+}
+
+/* Outline button */
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 10px 22px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: var(--color-bg-dark);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 600px;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .profile-img {
+    max-width: 300px;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,139 @@
+/* ===========================
+   Services Section (Dark Modern Theme)
+=========================== */
+
+.services-section {
+  color: var(--color-text-light);
+  padding: var(--section-padding);
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+/* ===== Title ===== */
+.section-title {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.divider-img {
+  width: 80px;
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+/* ===== Services Grid ===== */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+/* ===== Service Card ===== */
+.service-card {
+  background: var(--color-bg-card);
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  padding: 35px 25px;
+  flex: 1 1 300px;
+  max-width: 340px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ===== Icon ===== */
+.service-icon {
+  background: rgba(102, 252, 241, 0.08);
+  border: 1px solid var(--color-secondary);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  transition: all 0.3s ease;
+}
+
+.service-icon img {
+  width: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.service-card:hover .service-icon {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.service-card:hover .service-icon img {
+  filter: brightness(0);
+}
+
+/* ===== Text ===== */
+.service-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .services-grid {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .service-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    padding: 30px 20px;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .service-icon img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-section {
+    padding: 60px 15px;
+  }
+
+  .service-card {
+    padding: 25px 15px;
+  }
+}

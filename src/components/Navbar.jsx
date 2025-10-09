@@ -38,6 +38,20 @@ export default function Navbar({ offcanvasOpen, toggleOffcanvas, closeOffcanvas 
     burgerRef.current.classList.toggle("open", offcanvasOpen);
   }, [offcanvasOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.querySelector(".unslate_co--site-nav");
+      if (window.scrollY > 0) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       {/* ===== Desktop Nav ===== */}

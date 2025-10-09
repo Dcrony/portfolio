@@ -1,48 +1,88 @@
-footer {
-  background-color: #191919;
-  height: 320px;
-  width: 100%;
+.footer {
+  background: linear-gradient(180deg, var(--color-bg-dark), var(--color-bg-card));
+  color: var(--color-text-light);
+  padding: var(--section-padding);
   text-align: center;
-  position: relative;
- 
+  font-family: var(--font-main);
+  border-top: 1px solid var(--color-secondary);
+  box-shadow: var(--shadow-soft);
 }
 
-@media (max-width: 991.98px) {
-  
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-footer .footer-site-logo {
-  margin-bottom: 60px;
+/* === Logo === */
+.footer-logo {
+  margin-bottom: 40px;
 }
 
-footer .footer-site-logo a {
-  color: #fff;
-  font-size: 2.2rem;
-  font-weight: 600;
+.footer-logo a {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
 }
 
-footer .footer-site-logo a span {
-  color: #28a745;
-  font-size: 4rem;
+.footer-logo a span {
+  color: var(--color-primary);
+  font-size: 3rem;
 }
 
-@media (width: 900px) {
-  .social {
-    display: block;
+.footer-logo a:hover {
+  color: var(--color-primary);
+}
+
+/* === Social Links === */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.footer-social a {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  border-radius: var(--card-radius);
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--color-primary);
+  border-color: var(--color-secondary);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+/* === Copyright === */
+.footer-copy {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .footer-logo a {
+    font-size: 2rem;
   }
-}
 
-footer .social a {
-  color: #8a8282;
-  font-size: 1.1rem;
-  margin-right: 10px;
-}
+  .footer-social {
+    gap: 15px;
+  }
 
-footer .social a:hover {
-  color: #d6d3d3;
-}
-
-footer .site-copyright {
-  margin-top: 100px;
-  color: #8a8282;
+  .footer-social a {
+    font-size: 0.95rem;
+    padding: 5px 10px;
+  }
 }

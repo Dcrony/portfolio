@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../css/testimonial.css"
+import "../css/testimonial.css";
 
 const testimonials = [
   {
@@ -34,32 +34,35 @@ export default function Testimonial() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="testimonial-section">
       <h2 className="section-title">My Happy Clients</h2>
-      <div className="testimonial-wrapper">
-        {testimonials.map((t, index) => (
-          <div
-            key={t.id}
-            className={`testimonial-item ${
-              index === current ? "active" : ""
-            }`}
-          >
-            <div className="testimonial-inner-bg">
-              <span className="quote">&ldquo;</span>
-              <blockquote>{t.message}</blockquote>
+
+      <div className="testimonial-slider">
+        <div
+          className="testimonial-track"
+          style={{
+            transform: `translateX(-${current * 100}%)`,
+          }}
+        >
+          {testimonials.map((t) => (
+            <div className="testimonial-item" key={t.id}>
+              <div className="testimonial-inner-bg">
+                <span className="quote">&ldquo;</span>
+                <blockquote>{t.message}</blockquote>
+              </div>
+              <div className="testimonial-author-info">
+                <img src={t.img} alt={t.name} />
+                <h3>{t.name}</h3>
+                <span className="position">{t.role}</span>
+              </div>
             </div>
-            <div className="testimonial-author-info">
-              <img src={t.img} alt={t.name} />
-              <h3>{t.name}</h3>
-              <span className="position">{t.role}</span>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       <div className="controls">
