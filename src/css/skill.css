@@ -1,6 +1,5 @@
 .skills-section {
   padding: var(--section-padding);
-  background: var(--color-bg-dark);
   color: var(--color-text-light);
   text-align: center;
   font-family: var(--font-main);

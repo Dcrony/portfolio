@@ -9,7 +9,7 @@ export default function About() {
         <div className="section-heading text-center">
           <h2 className="section-title">About Me</h2>
           <img
-            src="src/assets/images/divider.png"
+            src="src/images/divider.png"
             alt="divider"
             className="divider-img"
           />
@@ -20,7 +20,7 @@ export default function About() {
           {/* Image */}
           <div className="about-image">
             <img
-              src="src/assets/images/dct1.jpg"
+              src="src/images/dct1.jpg"
               alt="Ibrahim Abdulmajeed"
               className="profile-img"
             />

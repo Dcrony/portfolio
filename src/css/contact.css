@@ -3,7 +3,6 @@
 ============================ */
 
 .contact-section {
-  background: var(--color-bg-dark);
   color: var(--color-text-light);
   padding: var(--section-padding);
   font-family: var(--font-main);

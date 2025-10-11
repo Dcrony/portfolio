@@ -6,7 +6,7 @@ const portfolioItems = [
     id: 1,
     category: "web",
     title: "Creative Website",
-    image: "src/assets/images/shoe.png",
+    image: "src/images/shoe.png",
     tools: ["React", "Node.js", "TailwindCSS"],
     description:
       "A responsive creative website built with React and styled using TailwindCSS. The backend is powered by Node.js for dynamic content management.",
@@ -16,7 +16,7 @@ const portfolioItems = [
     id: 2,
     category: "app",
     title: "Mobile App Design",
-    image: "src/assets/images/result.png",
+    image: "src/images/result.png",
     tools: ["React Native", "Expo", "Firebase"],
     description:
       "A mobile app prototype designed with React Native and Firebase for backend integration. Features user authentication and real-time updates.",
@@ -26,7 +26,7 @@ const portfolioItems = [
     id: 3,
     category: "branding",
     title: "Brand Identity",
-    image: "src/assets/images/restaurant.png",
+    image: "src/images/restaurant.png",
     tools: ["Figma", "Canva", "Illustrator"],
     description:
       "Brand design and identity creation using Figma and Adobe Illustrator to deliver modern, consistent visual aesthetics.",

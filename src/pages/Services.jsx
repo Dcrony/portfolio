@@ -9,7 +9,7 @@ export default function Services() {
         <div className="section-heading text-center">
           <h2 className="section-title">My Services</h2>
           <img
-            src="src/assets/images/divider.png"
+            src="src/images/divider.png"
             alt="divider"
             className="divider-img"
           />
@@ -21,7 +21,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/assets/images/svg/004-percentage.svg"
+                src="src/images/svg/004-percentage.svg"
                 alt="Web Development"
               />
             </div>
@@ -35,7 +35,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/assets/images/svg/001-options.svg"
+                src="src/images/svg/001-options.svg"
                 alt="Mobile App Development"
               />
             </div>
@@ -49,7 +49,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/assets/images/svg/006-goal.svg"
+                src="src/images/svg/006-goal.svg"
                 alt="E-Commerce Solutions"
               />
             </div>
@@ -63,7 +63,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/assets/images/svg/005-line-chart.svg"
+                src="src/images/svg/005-line-chart.svg"
                 alt="SEO & Optimization"
               />
             </div>
@@ -77,7 +77,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/assets/images/svg/002-chat.svg"
+                src="src/images/svg/002-chat.svg"
                 alt="Secure Web Solutions"
               />
             </div>
@@ -91,7 +91,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/assets/images/svg/003-contact-book.svg"
+                src="src/images/svg/003-contact-book.svg"
                 alt="Maintenance & Support"
               />
             </div>

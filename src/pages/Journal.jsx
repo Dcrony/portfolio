@@ -7,7 +7,7 @@ const posts = [
     title: "Web Development",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/assets/images/cyber.jpg",
+    image: "src/images/cyber.jpg",
     link: "blog-single.html",
   },
   {
@@ -15,7 +15,7 @@ const posts = [
     title: "Alone",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/assets/images/IMG-20240914-WA0144.jpg",
+    image: "src/images/IMG-20240914-WA0144.jpg",
     link: "blog-single.html",
   },
   {
@@ -23,7 +23,7 @@ const posts = [
     title: "Coding",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/assets/images/skill2.jpg",
+    image: "src/images/skill2.jpg",
     link: "blog-single.html",
   },
   {
@@ -31,7 +31,7 @@ const posts = [
     title: "Success",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/assets/images/IMG-20240910-WA0098.jpg",
+    image: "src/images/IMG-20240910-WA0098.jpg",
     link: "blog-single.html",
   },
   {
@@ -39,7 +39,7 @@ const posts = [
     title: "Free Time With Friends",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/assets/images/IMG-20240910-WA0069.jpg",
+    image: "src/images/IMG-20240910-WA0069.jpg",
     link: "blog-single.html",
   },
 ];
@@ -52,7 +52,7 @@ export default function Journal() {
         <div className="section-heading text-center">
           <h2 className="section-title">My Journal</h2>
           <img
-            src="src/assets/images/divider.png"
+            src="src/images/divider.png"
             alt="divider"
             className="divider-img"
           />

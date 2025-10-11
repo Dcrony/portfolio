@@ -58,7 +58,7 @@ export default function Contact() {
         <div className="section-heading text-center">
           <h2 className="section-title">Get In Touch</h2>
           <img
-            src="src/assets/images/divider.png"
+            src="src/images/divider.png"
             alt="divider"
             className="divider-img"
           />

@@ -6,7 +6,7 @@ export default function Hero() {
     <div
       className="cover-v1"
       style={{
-        backgroundImage: "url('src/assets/images/cyber.jpg')",
+        backgroundImage: "url('src/images/cyber.jpg')",
       }}
       id="home-section"
     >

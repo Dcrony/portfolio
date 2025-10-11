@@ -6,7 +6,7 @@ const testimonials = [
     id: 1,
     name: "Babatunde Hameed",
     role: "CEO, Babatech IT.",
-    img: "src/assets/images/testimony1.png",
+    img: "src/images/testimony1.png",
     message:
       "This service completely transformed our business. Highly recommended!",
   },
@@ -14,7 +14,7 @@ const testimonials = [
     id: 2,
     name: "Jane Smith",
     role: "Designer",
-    img: "src/assets/images/person_woman_3.jpg",
+    img: "src/images/person_woman_3.jpg",
     message:
       "I was amazed at the quality and speed of delivery. Fantastic work!",
   },
@@ -22,7 +22,7 @@ const testimonials = [
     id: 3,
     name: "Michael Lee",
     role: "Developer",
-    img: "src/assets/images/person_man_1.jpg",
+    img: "src/images/person_man_1.jpg",
     message:
       "Professional, reliable, and extremely talented. Couldn’t ask for more.",
   },
