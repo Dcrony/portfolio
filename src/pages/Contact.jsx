@@ -1,6 +1,56 @@
+import { useState } from "react";
+import emailjs from "emailjs-com";
 import "../css/contact.css";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!formData.name || !formData.email || !formData.message) {
+      setStatus("⚠️ Please fill in all required fields.");
+      return;
+    }
+
+    if (!validateEmail(formData.email)) {
+      setStatus("⚠️ Please enter a valid email address.");
+      return;
+    }
+
+    setStatus("Sending...");
+
+    emailjs
+      .send(
+        "service_17v4l2q", 
+        "template_5d2lxtk", 
+        formData,
+        "P53JFFmdEw4keEtVO" 
+      )
+      .then(() => {
+        setStatus("✅ Message sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      })
+      .catch(() => {
+        setStatus("❌ Failed to send message. Please try again later.");
+      });
+  };
+
   return (
     <section className="contact-section" id="contact-section">
       <div className="container">
@@ -17,7 +67,7 @@ export default function Contact() {
         {/* ===== Contact Content ===== */}
         <div className="contact-content">
           {/* Contact Form */}
-          <form className="contact-form" id="contactForm" method="POST">
+          <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-grid">
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -26,6 +76,8 @@ export default function Contact() {
                   type="text"
                   id="name"
                   className="form-control"
+                  value={formData.name}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -37,6 +89,8 @@ export default function Contact() {
                   type="email"
                   id="email"
                   className="form-control"
+                  value={formData.email}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -48,7 +102,8 @@ export default function Contact() {
                   type="text"
                   id="subject"
                   className="form-control"
-                  required
+                  value={formData.subject}
+                  onChange={handleChange}
                 />
               </div>
 
@@ -59,6 +114,8 @@ export default function Contact() {
                   id="message"
                   rows="4"
                   className="form-control"
+                  value={formData.message}
+                  onChange={handleChange}
                   required
                 ></textarea>
               </div>
@@ -67,7 +124,9 @@ export default function Contact() {
             <button type="submit" className="btn-primary">
               Send Message
             </button>
-            <span id="status" className="form-status"></span>
+            <span id="status" className="form-status">
+              {status}
+            </span>
           </form>
 
           {/* Contact Info */}

@@ -1,5 +1,5 @@
-import { useEffect, useRef } from "react";
-import "../css/navbar.css"
+import { useEffect, useRef, useState } from "react";
+import "../css/navbar.css";
 
 const leftNav = [
   { href: "#home-section", label: "Home" },
@@ -15,42 +15,43 @@ const rightNav = [
   { href: "#contact-section", label: "Contact" },
 ];
 
-export default function Navbar({ offcanvasOpen, toggleOffcanvas, closeOffcanvas }) {
+export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const mobileMenuRef = useRef(null);
   const burgerRef = useRef(null);
 
+  // Close menu when clicking outside
   useEffect(() => {
     function handleClickOutside(e) {
-      if (
-        mobileMenuRef.current &&
-        !mobileMenuRef.current.contains(e.target) &&
-        offcanvasOpen
-      ) {
-        closeOffcanvas?.();
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target)) {
+        setMenuOpen(false);
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
     return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, [offcanvasOpen, closeOffcanvas]);
+  }, [menuOpen]);
 
-  useEffect(() => {
-    if (!burgerRef.current) return;
-    burgerRef.current.classList.toggle("open", offcanvasOpen);
-  }, [offcanvasOpen]);
-
+  // Handle navbar scroll effect
   useEffect(() => {
     const handleScroll = () => {
       const nav = document.querySelector(".unslate_co--site-nav");
-      if (window.scrollY > 0) {
-        nav.classList.add("scrolled");
-      } else {
-        nav.classList.remove("scrolled");
-      }
+      if (window.scrollY > 0) nav.classList.add("scrolled");
+      else nav.classList.remove("scrolled");
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Toggle burger animation
+  useEffect(() => {
+    if (burgerRef.current) {
+      burgerRef.current.classList.toggle("open", menuOpen);
+    }
+  }, [menuOpen]);
 
   return (
     <>
@@ -80,11 +81,11 @@ export default function Navbar({ offcanvasOpen, toggleOffcanvas, closeOffcanvas 
             ))}
           </ul>
 
-          {/* Burger (visible on mobile) */}
+          {/* Burger Toggle */}
           <div
             ref={burgerRef}
             className="burger-toggle-menu"
-            onClick={toggleOffcanvas}
+            onClick={() => setMenuOpen(!menuOpen)}
           >
             <span></span>
             <span></span>
@@ -93,15 +94,13 @@ export default function Navbar({ offcanvasOpen, toggleOffcanvas, closeOffcanvas 
         </div>
       </nav>
 
-      {/* ===== Mobile Nav ===== */}
+      {/* ===== Mobile Menu ===== */}
       <div
         ref={mobileMenuRef}
-        className={`unslate_co--site-mobile-menu ${
-          offcanvasOpen ? "offcanvas" : ""
-        }`}
+        className={`unslate_co--site-mobile-menu ${menuOpen ? "active" : ""}`}
       >
         <div className="close-wrap text-right">
-          <a onClick={closeOffcanvas} className="cursor-pointer">
+          <a onClick={() => setMenuOpen(false)} className="cursor-pointer">
             <span className="close-label">Close</span>
             <span className="close-times">
               <span className="bar1"></span>
@@ -109,10 +108,11 @@ export default function Navbar({ offcanvasOpen, toggleOffcanvas, closeOffcanvas 
             </span>
           </a>
         </div>
+
         <ul className="site-nav-ul-none-onepage mt-4">
           {[...leftNav, ...rightNav].map((item) => (
             <li key={item.href}>
-              <a href={item.href} onClick={closeOffcanvas}>
+              <a href={item.href} onClick={() => setMenuOpen(false)}>
                 {item.label}
               </a>
             </li>

@@ -42,7 +42,7 @@
 
 .cover-v1 .subheading {
   font-size: 1.6rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-light);
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -58,28 +58,26 @@
 
 /* Buttons */
 .btn {
-  display: inline-block;
-  font-size: 0.9rem;
-  padding: 14px 28px;
-  letter-spacing: 0.05rem;
+  font-size: 11px;
+  padding: 15px 30px;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
-  font-weight: 600;
-  margin: 8px;
-  border-radius: 50px;
-  transition: all 0.3s ease;
-  text-decoration: none;
+  font-weight: 900;
+  margin: 4px;
 }
 
 .btn.btn-outline-pill.btn-custom-light {
   color: var(--color-text-light);
-  border: 2px solid var(--color-secondary);
+  border: 2px solid var(--color-text-light);
+  border-radius: 20px;
   background: transparent;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
 }
 
 .btn.btn-outline-pill.btn-custom-light:hover,
 .btn.btn-outline-pill.btn-custom-light:active {
-  background: var(--color-primary);
-  color: var(--color-bg-dark);
   border-color: var(--color-primary);
   box-shadow: var(--shadow-hover);
 }
@@ -196,36 +194,3 @@
   }
 }
 
-
-
-
-
-
-
-.btn {
-  font-size: 11px;
-  padding: 15px 30px;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  margin: 4px;
-}
-
-.btn.btn-outline-pill.btn-custom-light {
-  color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.404);
-  border-radius: 20px;
-  -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  transition: 0.3s all ease;
-}
-
-.btn.btn-outline-pill.btn-custom-light:hover,
-.btn.btn-outline-pill.btn-custom-light:active {
-  border-color: #fff;
-}
-
-.btn.btn-bg-white--hover:hover {
-  background-color: #fff;
-  color: #000;
-}

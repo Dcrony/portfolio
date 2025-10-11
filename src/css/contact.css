@@ -27,6 +27,8 @@
 
 /* ===== Contact Content ===== */
 .contact-content {
+  background-color: var(--color-bg-card);
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -39,7 +41,6 @@
 .contact-form {
   flex: 1;
   min-width: 320px;
-  background: var(--color-bg-card);
   padding: 30px;
   border-radius: 16px;
   box-shadow: var(--shadow-soft);
@@ -116,10 +117,7 @@ label {
 .contact-info {
   flex: 0.8;
   min-width: 250px;
-  background: var(--color-bg-card);
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: var(--shadow-soft);
   height: fit-content;
 }
 
