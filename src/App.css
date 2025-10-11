@@ -141,12 +141,12 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #6d6f70; /* default scrollbar color */
+  background-color: var(--color-text-muted); /* default scrollbar color */
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #6366f1; /* darker when hovered */
+  background-color: var(--color-primary); /* darker when hovered */
   width: 6px;
 }
