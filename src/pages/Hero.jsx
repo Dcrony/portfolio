@@ -1,12 +1,13 @@
 import React from "react";
 import "../css/hero.css"
+import hero from "../assets/images/cyber.jpg"
 
 export default function Hero() {
   return (
     <div
       className="cover-v1"
       style={{
-        backgroundImage: "url('src/images/cyber.jpg')",
+        backgroundImage: `url(${hero})`,
       }}
       id="home-section"
     >

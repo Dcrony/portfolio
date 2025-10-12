@@ -7,6 +7,8 @@
   --color-text-light: #ffffff; /* normal text */
   --color-text-muted: #c5c6c7; /* lighter text */
 
+  --color-highlight: #7bfdf41e;
+
   /* ===== Effects ===== */
   --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.2);
   --shadow-hover: 0 15px 30px rgba(102, 252, 241, 0.2);

@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import "../css/portfolio.css";
+import portfolio1 from "../assets/images/shoe.png";
+import portfolio2 from "../assets/images/result.png";
+import portfolio3 from "../assets/images/restaurant.png";
 
 const portfolioItems = [
   {
     id: 1,
     category: "web",
     title: "Creative Website",
-    image: "src/images/shoe.png",
+    image: portfolio1,
     tools: ["React", "Node.js", "TailwindCSS"],
     description:
       "A responsive creative website built with React and styled using TailwindCSS. The backend is powered by Node.js for dynamic content management.",
@@ -16,7 +19,7 @@ const portfolioItems = [
     id: 2,
     category: "app",
     title: "Mobile App Design",
-    image: "src/images/result.png",
+    image: portfolio2,
     tools: ["React Native", "Expo", "Firebase"],
     description:
       "A mobile app prototype designed with React Native and Firebase for backend integration. Features user authentication and real-time updates.",
@@ -26,7 +29,7 @@ const portfolioItems = [
     id: 3,
     category: "branding",
     title: "Brand Identity",
-    image: "src/images/restaurant.png",
+    image: portfolio3,
     tools: ["Figma", "Canva", "Illustrator"],
     description:
       "Brand design and identity creation using Figma and Adobe Illustrator to deliver modern, consistent visual aesthetics.",

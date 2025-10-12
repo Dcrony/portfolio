@@ -1,5 +1,7 @@
 import React from "react";
 import "../css/about.css";
+import dividerImg from "../assets/images/divider.png";
+import profileImg from "../assets/images/dct1.jpg";
 
 export default function About() {
   return (
@@ -9,7 +11,7 @@ export default function About() {
         <div className="section-heading text-center">
           <h2 className="section-title">About Me</h2>
           <img
-            src="src/images/divider.png"
+            src={dividerImg}
             alt="divider"
             className="divider-img"
           />
@@ -20,7 +22,7 @@ export default function About() {
           {/* Image */}
           <div className="about-image">
             <img
-              src="src/images/dct1.jpg"
+              src={profileImg}
               alt="Ibrahim Abdulmajeed"
               className="profile-img"
             />

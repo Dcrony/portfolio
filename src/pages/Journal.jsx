@@ -1,5 +1,16 @@
 import React from "react";
 import "../css/journal.css";
+import dividerImg from "../assets/images/divider.png";
+import hero from "../assets/images/cyber.jpg";
+import journal1 from "../assets/images/dct1.jpg";
+import journal2 from "../assets/images/skill2.jpg";
+import journal3 from "../assets/images/IMG-20240910-WA0069.jpg";
+import journal4 from "../assets/images/skill2.jpg";
+
+
+
+
+
 
 const posts = [
   {
@@ -7,7 +18,7 @@ const posts = [
     title: "Web Development",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/images/cyber.jpg",
+    image: hero,
     link: "blog-single.html",
   },
   {
@@ -15,7 +26,7 @@ const posts = [
     title: "Alone",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/images/IMG-20240914-WA0144.jpg",
+    image: journal1,
     link: "blog-single.html",
   },
   {
@@ -23,7 +34,7 @@ const posts = [
     title: "Coding",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/images/skill2.jpg",
+    image: journal2,
     link: "blog-single.html",
   },
   {
@@ -31,7 +42,7 @@ const posts = [
     title: "Success",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/images/IMG-20240910-WA0098.jpg",
+    image: journal3,
     link: "blog-single.html",
   },
   {
@@ -39,7 +50,7 @@ const posts = [
     title: "Free Time With Friends",
     author: "Dcrony",
     readTime: "5 mins read",
-    image: "src/images/IMG-20240910-WA0069.jpg",
+    image: journal4,
     link: "blog-single.html",
   },
 ];
@@ -52,7 +63,7 @@ export default function Journal() {
         <div className="section-heading text-center">
           <h2 className="section-title">My Journal</h2>
           <img
-            src="src/images/divider.png"
+            src={dividerImg}
             alt="divider"
             className="divider-img"
           />

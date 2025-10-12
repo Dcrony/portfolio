@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react";
 import "../css/testimonial.css";
+import testimonial1 from "../assets/images/testimony1.png";
+import testimonial2 from "../assets/images/person_woman_3.jpg";
+import testimonial3 from "../assets/images/person_man_1.jpg";
+
 
 const testimonials = [
   {
     id: 1,
     name: "Babatunde Hameed",
     role: "CEO, Babatech IT.",
-    img: "src/images/testimony1.png",
+    img: testimonial1,
     message:
       "This service completely transformed our business. Highly recommended!",
   },
@@ -14,7 +18,7 @@ const testimonials = [
     id: 2,
     name: "Jane Smith",
     role: "Designer",
-    img: "src/images/person_woman_3.jpg",
+    img: testimonial2,
     message:
       "I was amazed at the quality and speed of delivery. Fantastic work!",
   },
@@ -22,7 +26,7 @@ const testimonials = [
     id: 3,
     name: "Michael Lee",
     role: "Developer",
-    img: "src/images/person_man_1.jpg",
+    img: testimonial3,
     message:
       "Professional, reliable, and extremely talented. Couldn’t ask for more.",
   },

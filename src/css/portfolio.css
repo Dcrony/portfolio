@@ -24,7 +24,7 @@
 }
 
 .filter-btn {
-  background: transparent;
+  background: var(--color-highlight);
   border: 2px solid #45a29e;
   color: #66fcf1;
   padding: 8px 18px;
@@ -96,8 +96,9 @@
 }
 
 .tool {
-  background: #45a29e;
-  color: #0b0c10;
+  background: var(--color-highlight);
+  color: var(--color-primary);
+  border: 1px solid var(--color-secondary);
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 25px;
@@ -107,6 +108,7 @@
 
 .tool:hover {
   background: #66fcf1;
+  color: #0b0c10;
 }
 
 /* ===== Modal ===== */

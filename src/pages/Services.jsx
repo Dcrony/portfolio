@@ -1,5 +1,12 @@
 import React from "react";
 import "../css/service.css";
+import dividerImg from "../assets/images/divider.png";
+import service1 from "../assets/images/svg/004-percentage.svg";
+import service2 from "../assets/images/svg/001-options.svg";
+import service3 from "../assets/images/svg/006-goal.svg";
+import service4 from "../assets/images/svg/005-line-chart.svg";
+import service5 from "../assets/images/svg/002-chat.svg";
+import service6 from "../assets/images/svg/003-contact-book.svg";
 
 export default function Services() {
   return (
@@ -9,7 +16,7 @@ export default function Services() {
         <div className="section-heading text-center">
           <h2 className="section-title">My Services</h2>
           <img
-            src="src/images/divider.png"
+            src= {dividerImg}
             alt="divider"
             className="divider-img"
           />
@@ -21,7 +28,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/images/svg/004-percentage.svg"
+                src={service1}
                 alt="Web Development"
               />
             </div>
@@ -35,7 +42,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/images/svg/001-options.svg"
+                src={service2}
                 alt="Mobile App Development"
               />
             </div>
@@ -49,7 +56,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/images/svg/006-goal.svg"
+                src={service3}
                 alt="E-Commerce Solutions"
               />
             </div>
@@ -63,7 +70,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/images/svg/005-line-chart.svg"
+                src={service4}
                 alt="SEO & Optimization"
               />
             </div>
@@ -77,7 +84,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/images/svg/002-chat.svg"
+                src={service5}
                 alt="Secure Web Solutions"
               />
             </div>
@@ -91,7 +98,7 @@ export default function Services() {
           <div className="service-card">
             <div className="service-icon">
               <img
-                src="src/images/svg/003-contact-book.svg"
+                src={service6}
                 alt="Maintenance & Support"
               />
             </div>
