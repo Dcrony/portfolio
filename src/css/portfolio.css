@@ -20,7 +20,7 @@
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .filter-btn {
@@ -119,13 +119,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999;
+  z-index: 9991;
   padding: 40px 20px;
   overflow-y: auto;
 }
 
 .modal-content {
-  background-color: #060708;
+  border:2px solid var(--color-highlight);
   border-radius: 12px;
   max-width: 640px;
   width: 100%;
@@ -134,7 +134,7 @@
   position: relative;
   max-height: 90vh;
   animation: fadeIn 0.35s ease;
-
+z-index: 9999;
 }
 
 .modal-content img {
@@ -155,12 +155,26 @@
 }
 
 .modal-content ul {
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   margin-bottom: 20px;
+  list-style: none;
+}
+
+.modal-content ul li {
+  background: var(--color-highlight);
+  color: var(--color-primary);
+  border: 1px solid var(--color-secondary);
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 25px;
+  font-size: 0.8rem;
 }
 
 .modal-content a {
-  background: #45a29e;
+  background: var(--color-secondary);
   color: #0b0c10;
   padding: 10px 18px;
   border-radius: 25px;
@@ -169,7 +183,8 @@
 }
 
 .modal-content a:hover {
-  background: #66fcf1;
+  background: var(--color-highlight);
+  border: 1px solid var(--color-secondary);
 }
 
 .close-btn {

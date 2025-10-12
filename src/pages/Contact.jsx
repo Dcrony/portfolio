@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import "../css/contact.css";
+import dividerImg from "../assets/images/divider.png";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -37,10 +38,10 @@ export default function Contact() {
 
     emailjs
       .send(
-        "service_17v4l2q", 
-        "template_5d2lxtk", 
+        "service_17v4l2q",
+        "template_5d2lxtk",
         formData,
-        "P53JFFmdEw4keEtVO" 
+        "P53JFFmdEw4keEtVO"
       )
       .then(() => {
         setStatus("✅ Message sent successfully!");
@@ -57,11 +58,7 @@ export default function Contact() {
         {/* ===== Heading ===== */}
         <div className="section-heading text-center">
           <h2 className="section-title">Get In Touch</h2>
-          <img
-            src="src/images/divider.png"
-            alt="divider"
-            className="divider-img"
-          />
+          <img src={dividerImg} alt="divider" className="divider-img" />
         </div>
 
         {/* ===== Contact Content ===== */}
@@ -124,7 +121,16 @@ export default function Contact() {
             <button type="submit" className="btn-primary">
               Send Message
             </button>
-            <span id="status" className="form-status">
+            <span
+              id="status"
+              className={`form-status ${
+                status.includes("✅")
+                  ? "success"
+                  : status.includes("❌") || status.includes("⚠️")
+                  ? "error"
+                  : "info"
+              }`}
+            >
               {status}
             </span>
           </form>

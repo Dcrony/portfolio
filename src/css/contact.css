@@ -6,6 +6,8 @@
   color: var(--color-text-light);
   padding: var(--section-padding);
   font-family: var(--font-main);
+  position: relative;
+  
 }
 
 /* ===== Section Heading ===== */
@@ -27,6 +29,7 @@
 /* ===== Contact Content ===== */
 .contact-content {
   background-color: var(--color-bg-card);
+  border: 1px solid var(--color-secondary);
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -42,7 +45,7 @@
   min-width: 320px;
   padding: 30px;
   border-radius: 16px;
-  box-shadow: var(--shadow-soft);
+  
 }
 
 .form-grid {
@@ -70,19 +73,22 @@ label {
   letter-spacing: 1px;
 }
 
-.form-control {
+
+.form-group .form-control {
   background: transparent;
   border: 2px solid var(--color-primary);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
   color: var(--color-text-light);
   padding: 8px 4px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
 }
 
-.form-control:focus {
+.form-group .form-control:focus {
+  background-color: var(--color-highlight);
   outline: none;
-  border-color: var(--color-primary);
+
 }
 
 /* ===== Button ===== */
@@ -104,12 +110,53 @@ label {
   transform: translateY(-2px);
 }
 
-/* ===== Status ===== */
+
+/* ===== Status Messages ===== */
 .form-status {
+  background: transparent;
   display: inline-block;
   margin-left: 15px;
-  font-size: 0.9rem;
-  color: var(--color-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-in forwards;
+  padding: 8px 14px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+}
+
+/* Success message */
+.form-status.success {
+  color: #0f5132;
+  background-color: #abffd9;
+  border: 1px solid #25a76c;
+}
+
+/* Error message */
+.form-status.error {
+  color: #842029;
+  background-color: #ffdcdf;
+  border: 1px solid #83212b;
+}
+
+/* Info / sending message */
+.form-status.info {
+  color: #055160;
+  background-color: #cff4fc;
+  border: 1px solid #b6effb;
+}
+
+/* Animation for smooth appearance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* ===== Contact Info ===== */

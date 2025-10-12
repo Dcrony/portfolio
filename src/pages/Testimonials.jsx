@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "../css/testimonial.css";
+import dividerImg from "../assets/images/divider.png";
 import testimonial1 from "../assets/images/testimony1.png";
 import testimonial2 from "../assets/images/person_woman_3.jpg";
 import testimonial3 from "../assets/images/person_man_1.jpg";
@@ -45,6 +46,11 @@ export default function Testimonial() {
   return (
     <section className="testimonial-section">
       <h2 className="section-title">My Happy Clients</h2>
+      <img
+        src={dividerImg}
+        alt="divider"
+        className="divider-img"
+      />
 
       <div className="testimonial-slider">
         <div

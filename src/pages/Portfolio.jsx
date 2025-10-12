@@ -1,29 +1,32 @@
 import { useState, useEffect } from "react";
 import "../css/portfolio.css";
-import portfolio1 from "../assets/images/shoe.png";
+import dividerImg from "../assets/images/divider.png";
+import portfolio1 from "../assets/images/dct1.png";
 import portfolio2 from "../assets/images/result.png";
-import portfolio3 from "../assets/images/restaurant.png";
+import portfolio3 from "../assets/images/dct1.png";
 
 const portfolioItems = [
   {
     id: 1,
     category: "web",
-    title: "Creative Website",
+    title: "Portfolio Website",
     image: portfolio1,
-    tools: ["React", "Node.js", "TailwindCSS"],
+    tools: ["React", "Boostrap"],
     description:
-      "A responsive creative website built with React and styled using TailwindCSS. The backend is powered by Node.js for dynamic content management.",
-    link: "#",
+      "A personal portfolio website built with React and Bootstrap, showcasing projects and skills with a clean, responsive design.",
+    link: "https://dcrony.pxxl.click",
+    source: "https://github.com/Dcrony/portfoliome",
   },
   {
     id: 2,
     category: "app",
-    title: "Mobile App Design",
+    title: "Supermarket POS App",
     image: portfolio2,
-    tools: ["React Native", "Expo", "Firebase"],
+    tools: ["PHP", "MySQL", "CSS"],
     description:
-      "A mobile app prototype designed with React Native and Firebase for backend integration. Features user authentication and real-time updates.",
-    link: "#",
+      "A supermarket point-of-sale application developed using PHP and MySQL, featuring inventory management and sales tracking functionalities.",
+    link: "supermarket.pxxl.click",
+    source: "https://github.com/Dcrony/supermarket",
   },
   {
     id: 3,
@@ -61,6 +64,11 @@ export default function Portfolio() {
   return (
     <section className="portfolio-section" id="portfolio">
       <h2 className="section-title">My Portfolio</h2>
+      <img
+        src={dividerImg}
+        alt="divider"
+        className="divider-img"
+      />
 
       {/* Filter Buttons */}
       <div className="portfolio-filters">
