@@ -62,13 +62,9 @@ export default function Portfolio() {
       : portfolioItems.filter((item) => item.category === activeFilter);
 
   return (
-    <section className="portfolio-section" id="portfolio">
+    <section className="portfolio-section" id="portfolio-section">
       <h2 className="section-title">My Portfolio</h2>
-      <img
-        src={dividerImg}
-        alt="divider"
-        className="divider-img"
-      />
+      <img src={dividerImg} alt="divider" className="divider-img" />
 
       {/* Filter Buttons */}
       <div className="portfolio-filters">
@@ -111,25 +107,49 @@ export default function Portfolio() {
       {selectedProject && (
         <div className="modal-overlay" onClick={() => setSelectedProject(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-btn" onClick={() => setSelectedProject(null)}>
+            <button
+              className="close-btn"
+              onClick={() => setSelectedProject(null)}
+            >
               ✖
             </button>
-            <img src={selectedProject.image} alt={selectedProject.title} />
-            <h2>{selectedProject.title}</h2>
-            <p>{selectedProject.description}</p>
-            <h4>Tools Used:</h4>
-            <ul>
-              {selectedProject.tools.map((tool, i) => (
-                <li key={i}>{tool}</li>
-              ))}
-            </ul>
-            <a href={selectedProject.link} target="_blank" rel="noopener noreferrer">
-              View Project
-            </a>
+            <div className="cover-v1 ">
+              <div className="container text-center">
+                <h1 className="heading" data-aos="fade-up">
+                  {selectedProject.title}
+                </h1>
+                <h2
+                  className="subheading"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  {selectedProject.description}
+                </h2>
+                <div className="py-10"
+                style={{padding:"0 0 60px 0"}}>
+              <img src={selectedProject.image} alt={selectedProject.title} data-aos="fade-up" />
+              
+              <h4 data-aos="fade-up">Tools Used:</h4>
+              <ul data-aos="fade-up">
+                {selectedProject.tools.map((tool, i) => (
+                  <li key={i}>{tool}</li>
+                ))}
+              </ul>
+              <a
+                href={selectedProject.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Project
+              </a>
+            </div>
+              </div>
+              
+            </div>
+            
           </div>
         </div>
       )}
     </section>
   );
 }
-            

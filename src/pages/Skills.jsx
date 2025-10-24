@@ -30,7 +30,7 @@ export default function Skills() {
   ];
 
   const SkillCard = ({ title, skills }) => (
-    <div className="skill-card">
+    <div className="skill-card"  >
       <h3>{title}</h3>
       <div className="skill-tags">
         {skills.map((skill, index) => (
@@ -43,7 +43,7 @@ export default function Skills() {
   );
 
   return (
-    <section className="skills-section" id="skills">
+    <section className="skills-section" id="skills-section">
       <h2 className="section-title">My Skills</h2>
       <img
         src={dividerImg}

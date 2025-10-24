@@ -32,7 +32,8 @@
 }
 
 .testimonial-item {
-  min-width: 100%;
+  width: 100%;
+  max-width: 80rem;
   flex-shrink: 0;
   padding: 0 10px;
   box-sizing: border-box;
@@ -40,9 +41,13 @@
 
 /* === CARD STYLE === */
 .testimonial-inner-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--color-bg-card);
   padding: 50px;
-  padding-bottom: 70px;
+  width: 100%;
+  max-width: 80rem;
   font-size: 1.1rem;
   line-height: 1.7;
   border-radius: var(--card-radius);
