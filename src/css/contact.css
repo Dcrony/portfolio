@@ -42,7 +42,7 @@
 /* ===== Contact Form ===== */
 .contact-form {
   flex: 1;
-  min-width: 320px;
+  min-width: 100px;
   padding: 30px;
   border-radius: 16px;
   
