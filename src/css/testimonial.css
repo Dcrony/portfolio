@@ -33,7 +33,7 @@
 
 .testimonial-item {
   width: 100%;
-  max-width: 80rem;
+  /* max-width: 90rem; */
   flex-shrink: 0;
   padding: 0 10px;
   box-sizing: border-box;
