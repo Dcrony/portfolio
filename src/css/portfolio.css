@@ -1,7 +1,7 @@
 /* ===== Portfolio Section ===== */
 .portfolio-section {
   padding: 100px 20px;
-  color: #fff;
+  color: var(--color-text-light);
   text-align: center;
 }
 
@@ -9,7 +9,6 @@
   font-size: 2.2rem;
   font-weight: 700;
   margin-bottom: 50px;
-  color: #66fcf1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -25,8 +24,8 @@
 
 .filter-btn {
   background: var(--color-highlight);
-  border: 2px solid #45a29e;
-  color: #66fcf1;
+  border: 2px solid var(--color-primary);
+  color: var(--color-text-light);
   padding: 8px 18px;
   border-radius: 25px;
   font-size: 0.95rem;
@@ -36,7 +35,7 @@
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: #45a29e;
+  background: var(--color-secondary);
   color: #0b0c10;
   transform: translateY(-2px);
 }
@@ -75,7 +74,7 @@
 }
 
 .portfolio-info h3 {
-  color: #66fcf1;
+  color: var(--color-secondary);
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 6px;

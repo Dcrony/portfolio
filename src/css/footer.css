@@ -1,5 +1,5 @@
 .footer {
-  background: linear-gradient(180deg, var(--color-bg-dark), var(--color-bg-card));
+  background: linear-gradient(180deg, var(--color-bg-light), var(--color-bg-card));
   color: var(--color-text-light);
   padding: var(--section-padding);
   text-align: center;

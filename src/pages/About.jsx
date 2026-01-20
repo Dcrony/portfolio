@@ -1,4 +1,3 @@
-import React from "react";
 import "../css/about.css";
 import dividerImg from "../assets/images/divider.png";
 import profileImg from "../assets/images/dct1.jpg";

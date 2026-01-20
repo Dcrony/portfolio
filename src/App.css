@@ -1,17 +1,18 @@
 :root {
   /* ===== Theme Colors ===== */
-  --color-primary: #66fcf1; /* bright teal accent */
-  --color-secondary: #45a29e; /* muted teal for borders/buttons */
-  --color-bg-dark: #0b0c10; /* main background */
-  --color-bg-card: #1f2833; /* card backgrounds */
-  --color-text-light: #ffffff; /* normal text */
-  --color-text-muted: #c5c6c7; /* lighter text */
+  --color-primary: #ec70ae; /* bright teal accent */
+  --color-secondary: #ec4899; /* muted teal for borders/buttons */
+  --color-bg-light: #f7f7f7; /* main background */
+  --color-bg-card: #c5c6c7; /* card backgrounds */
+  --color-text-light: #0b0c10; /* normal text */
+  --color-text-muted: #1f2833; /* lighter text */
+  --color-border:
 
-  --color-highlight: #7bfdf41e;
+  --color-highlight: #ec70ae1e;
 
   /* ===== Effects ===== */
   --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.2);
-  --shadow-hover: 0 15px 30px rgba(102, 252, 241, 0.2);
+  --shadow-hover: 0 15px 30px #6862656c;
 
   /* ===== Typography ===== */
   --font-main: "Poppins", "Segoe UI", sans-serif;
@@ -28,7 +29,7 @@
 ============================== */
 body,
 .unslate_co--site-inner {
-  background: var(--color-bg-dark);
+  background: var(--color-bg-light);
   color: var(--color-text-light);
   font-family: var(--font-main);
   margin: 0;
@@ -120,7 +121,7 @@ a:hover {
   height: 100%;
   position: fixed;
   z-index: 7100;
-  background: var(--color-bg-dark);
+  background: var(--color-bg-light);
   top: 0;
   left: 0;
 }

@@ -3,12 +3,13 @@ import "../css/portfolio.css";
 import dividerImg from "../assets/images/divider.png";
 import portfolio1 from "../assets/images/dct1.png";
 import portfolio2 from "../assets/images/result.png";
-import portfolio3 from "../assets/images/dct1.png";
+import portfolio3 from "../assets/images/oyinskin.png";
+import portfolio4 from "../assets/images/wuraola.png";
 
 const portfolioItems = [
   {
     id: 1,
-    category: "web",
+    category: "WEB",
     title: "Portfolio Website",
     image: portfolio1,
     tools: ["React", "Boostrap"],
@@ -19,7 +20,7 @@ const portfolioItems = [
   },
   {
     id: 2,
-    category: "app",
+    category: "APP",
     title: "Supermarket POS App",
     image: portfolio2,
     tools: ["PHP", "MySQL", "CSS"],
@@ -30,13 +31,23 @@ const portfolioItems = [
   },
   {
     id: 3,
-    category: "branding",
+    category: "BRANDING",
     title: "Brand Identity",
     image: portfolio3,
-    tools: ["Figma", "Canva", "Illustrator"],
+    tools: ["HTML", "CSS", "Boostrap", "JavaScript"],
+    description:
+      "Brand design and website fully responsive, consistent visual aesthetics.",
+    link: "https://oyeskin-natural.vercel.app",
+  },
+  {
+    id: 4,
+    category: "BRANDING",
+    title: "Brand Website",
+    image: portfolio4,
+    tools: ["Figma", "Tailwind CSS", "JavaScript"],
     description:
       "Brand design and identity creation using Figma and Adobe Illustrator to deliver modern, consistent visual aesthetics.",
-    link: "#",
+    link: "https://wuraolahouseofbeauty.vercel.app",
   },
 ];
 

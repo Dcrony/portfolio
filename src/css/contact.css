@@ -14,7 +14,6 @@
 .section-title {
   font-size: var(--font-size-heading);
   font-weight: 700;
-  color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 15px;
@@ -95,7 +94,7 @@ label {
 .btn-primary {
   display: inline-block;
   background: var(--color-primary);
-  color: var(--color-bg-dark);
+  color: var(--color-bg-light);
   font-weight: 600;
   padding: 10px 25px;
   border-radius: 25px;
