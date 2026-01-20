@@ -1,6 +1,13 @@
-import React from "react";
 import "../css/hero.css"
 import hero from "../assets/images/cyber.jpg"
+import { Facebook, Github, LinkedinIcon, X } from "lucide-react";
+
+const socialLinks = [
+  { icon: <X size={28} />, url: "https://x.com/CodeWithDcrony" },
+  { icon: <Github size={28} />, url: "https://github.com/Dcrony" },
+  { icon: <Facebook size={28} />, url: "https://facebook.com/yourprofile" },
+  { icon: <LinkedinIcon size={28} />, url: "https://linkedin.com/in/ibrahim-abdulmajeed-803b12336" },
+];
 
 export default function Hero() {
   return (
@@ -34,6 +41,20 @@ export default function Hero() {
                     >Hire Me</a
                   >
                 </p>
+
+                <div className="social-icons">
+                  {socialLinks.map((link, index) => (
+                    <a
+                      key={index}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="social-icon"
+                    >
+                      {link.icon}
+                    </a>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

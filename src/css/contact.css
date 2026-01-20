@@ -162,7 +162,7 @@ label {
 /* ===== Contact Info ===== */
 .contact-info {
   flex: 0.8;
-  min-width: 250px;
+  /* min-width: 250px; */
   padding: 30px;
   height: fit-content;
 }

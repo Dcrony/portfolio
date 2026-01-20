@@ -82,6 +82,22 @@
   box-shadow: var(--shadow-hover);
 }
 
+
+.cover-v1 .social-icons a {
+  color: var(--color-text-light);
+  margin: 0 10px;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+
+.cover-v1 .social-icons a:hover {
+  color: var(--color-primary);
+  transform: translateY(-4px);
+}
+
+
+
 .mouse-wrap {
   position: relative;
   display: inline-block;

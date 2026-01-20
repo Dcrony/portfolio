@@ -14,7 +14,7 @@ const portfolioItems = [
     tools: ["React", "Boostrap"],
     description:
       "A personal portfolio website built with React and Bootstrap, showcasing projects and skills with a clean, responsive design.",
-    link: "https://dcrony.pxxl.click",
+    link: "https://dcrony.vercel.app",
     source: "https://github.com/Dcrony/portfoliome",
   },
   {
