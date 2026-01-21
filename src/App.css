@@ -1,7 +1,7 @@
 :root {
   /* ===== Theme Colors ===== */
-  --color-primary: #ec70ae; /* bright teal accent */
-  --color-secondary: #ec4899; /* muted teal for borders/buttons */
+  --color-primary: #b836c9; /* bright teal accent */
+  --color-secondary: #9c17ad; /* muted teal for borders/buttons */
   --color-bg-light: #f7f7f7; /* main background */
   --color-bg-card: #c5c6c7; /* card backgrounds */
   --color-text-light: #0b0c10; /* normal text */
@@ -16,7 +16,7 @@
 
   /* ===== Typography ===== */
   --font-main: "Poppins", "Segoe UI", sans-serif;
-  --font-size-heading: 2.2rem;
+  --font-size-heading: 3rem;
   --font-size-body: 1rem;
 
   /* ===== Spacing ===== */

@@ -109,7 +109,7 @@ export default function Navbar() {
           </a>
         </div>
 
-        <ul className="site-nav-ul-none-onepage mt-4">
+        <ul className="site-nav-ul-none-onepage">
           {[...leftNav, ...rightNav].map((item) => (
             <li key={item.href}>
               <a href={item.href} onClick={() => setMenuOpen(false)}>

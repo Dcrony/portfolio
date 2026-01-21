@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "../css/portfolio.css";
 import dividerImg from "../assets/images/divider.png";
 import portfolio1 from "../assets/images/dct1.png";
-import portfolio2 from "../assets/images/result.png";
+import portfolio2 from "../assets/images/supermarket.png";
 import portfolio3 from "../assets/images/oyinskin.png";
 import portfolio4 from "../assets/images/wuraola.png";
 
@@ -26,7 +26,7 @@ const portfolioItems = [
     tools: ["PHP", "MySQL", "CSS"],
     description:
       "A supermarket point-of-sale application developed using PHP and MySQL, featuring inventory management and sales tracking functionalities.",
-    link: "supermarket.pxxl.click",
+    link: "supermarketpos.pxxl.click",
     source: "https://github.com/Dcrony/supermarket",
   },
   {
@@ -129,17 +129,18 @@ export default function Portfolio() {
                 <h1 className="heading" data-aos="fade-up">
                   {selectedProject.title}
                 </h1>
-                <h2
+                
+                <div className="py-10"
+                style={{padding:"0 0 60px 0"}}>
+              <img src={selectedProject.image} alt={selectedProject.title} data-aos="fade-up" />
+              <h2
                   className="subheading"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >
                   {selectedProject.description}
                 </h2>
-                <div className="py-10"
-                style={{padding:"0 0 60px 0"}}>
-              <img src={selectedProject.image} alt={selectedProject.title} data-aos="fade-up" />
-              
+                
               <h4 data-aos="fade-up">Tools Used:</h4>
               <ul data-aos="fade-up">
                 {selectedProject.tools.map((tool, i) => (

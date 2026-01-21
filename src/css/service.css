@@ -36,8 +36,7 @@
 /* ===== Service Card ===== */
 .service-card {
   background: var(--color-bg-card);
-  border-radius: 16px;
-  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
   box-shadow: var(--shadow-soft);
   padding: 35px 25px;
   flex: 1 1 300px;
@@ -53,8 +52,8 @@
 
 /* ===== Icon ===== */
 .service-icon {
-  background: rgba(102, 252, 241, 0.08);
-  border: 1px solid var(--color-secondary);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-text-light);
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -71,7 +70,7 @@
 }
 
 .service-card:hover .service-icon {
-  background: var(--color-primary);
+  background: var(--color-highlight);
   border-color: var(--color-primary);
 }
 
@@ -82,8 +81,8 @@
 /* ===== Text ===== */
 .service-card h3 {
   font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--color-primary);
+  font-weight: 900;
+  color: var(--color-text-light);
   margin-bottom: 12px;
 }
 

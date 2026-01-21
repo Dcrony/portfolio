@@ -1,6 +1,7 @@
 import "../css/hero.css";
 import hero from "../assets/images/cyber.jpg";
 import { Facebook, Github, LinkedinIcon, X } from "lucide-react";
+import cv from "../assets/images/dcronyresume.pdf"
 
 const socialLinks = [
   { icon: <X size={28} />, url: "https://x.com/CodeWithDcrony" },
@@ -22,9 +23,11 @@ export default function Hero() {
         <div className="row align-items-center">
           <div className="col-md-8 mx-auto text-center">
             {/* Keep your heading content but with new styling */}
-            <h1 className="events-heading">
+            <div>
+              <h1 className="events-heading">
               Dcrony  
             </h1>
+            </div>
             <h2 className="events-subheading">
               I’m Ibrahim Abdulmajeed <br />
               A Full-Stack Web Developer
@@ -35,17 +38,17 @@ export default function Hero() {
             {/* Updated buttons to match events style */}
             <div className="events-buttons">
               <a
-                href="images/dcronyresume.pdf"
                 className="btn btn-primary btn-lg"
                 target="_blank"
+                download={cv}
               >
-                Get Started
+                Download CV
               </a>
               <a
                 href="#contact-section"
                 className="btn btn-outline btn-lg"
               >
-                Browse Events
+                Hire Me
               </a>
             </div>
 

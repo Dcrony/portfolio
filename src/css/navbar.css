@@ -7,7 +7,9 @@
   width: 100%;
   z-index: 1030;
   background: transparent;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
   padding: 15px 0;
   font-family: var(--font-main);
 }
@@ -153,7 +155,7 @@
 .close-label {
   font-size: 14px;
   margin-right: 10px;
-  color: var(--color-text-muted);
+  color: var(--color-bg-card);
 }
 
 .close-times {
@@ -189,18 +191,24 @@
 }
 
 .site-nav-ul-none-onepage li {
-  margin: 20px 0;
+  margin: 13px 0;
+  border-bottom: 2px solid var(--color-bg-card);
+  width: 240px;
+  height: 40px;
+  display: flex;
 }
 
 .site-nav-ul-none-onepage li a {
-  color: var(--color-text-muted);
+  color: var(--color-bg-card);
   font-size: 16px;
   text-decoration: none;
+  outline: none;
   transition: color 0.3s ease;
+  padding: 10px 80px;
 }
 
-.site-nav-ul-none-onepage li a:hover {
-  color: var(--color-primary);
+.site-nav-ul-none-onepage li:hover {
+  background: var(--color-primary);
 }
 
 /* ------------------------------

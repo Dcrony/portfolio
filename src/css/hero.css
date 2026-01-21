@@ -2,7 +2,7 @@
 .events-hero {
   background: var(--color-bg-light);
   width: 100%;
-  min-height: 100vh;
+  height: 90vh;
   display: flex;
   align-items: center;
   color: white;
@@ -34,12 +34,14 @@
   font-size: 8rem;
   font-weight: 900;
   padding:0 0 10px 0;
-  margin-bottom: 10px;
+  margin: 20px 0;
   color: var(--color-bg-light);
   background: var(--color-secondary);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 2px solid;
   border-radius: 20px;
+  position: relative;
+  top: 20px;
 }
 
 .events-subheading {
@@ -191,12 +193,12 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .events-hero {
-    margin: 40px 0;
+    margin: 10px 0 20px 0;
     min-height: 80vh;
   }
   
   .events-heading {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   
   .events-subheading {
@@ -221,7 +223,7 @@
 
 @media (max-width: 576px) {
   .events-heading {
-    font-size: 2rem;
+    font-size: 4rem;
   }
   
   .events-subheading {
