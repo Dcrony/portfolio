@@ -120,7 +120,7 @@
 }
 
 .social-icon:hover {
-  color: var(--color-secondary);
+  color: var(--color-bg-light);
   background: var(--color-secondary);
   border: var(--color-primary);
   transform: translateY(-3px);
@@ -155,6 +155,12 @@
   border-radius: 20px;
 }
 
+.mouse-wrap .mouse:hover{
+  border: 2px solid var(--color-primary);
+
+  
+}
+
 .mouse-wrap .mouse .scroll {
   position: absolute;
   width: 4px;
@@ -165,6 +171,10 @@
   top: 10px;
   transform: translateX(-50%);
   animation: scrollAnimation 2s infinite;
+}
+
+.mouse-wrap .mouse .scroll:hover{
+  color: var(--color-bg-light);
 }
 
 @keyframes scrollAnimation {
@@ -181,8 +191,8 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .events-hero {
-    padding: 60px 0;
-    min-height: auto;
+    margin: 40px 0;
+    min-height: 80vh;
   }
   
   .events-heading {
@@ -202,6 +212,10 @@
   
   .social-icons {
     gap: 15px;
+  }
+
+  .mouse-wrap{
+    bottom: 0;
   }
 }
 
