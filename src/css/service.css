@@ -48,12 +48,13 @@
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-hover);
+  border: 2px solid var(--color-primary);
 }
 
 /* ===== Icon ===== */
 .service-icon {
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-text-light);
+  background: var(--color-primary);
+  border: 2px solid var(--color-text-light);
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -71,11 +72,13 @@
 
 .service-card:hover .service-icon {
   background: var(--color-highlight);
-  border-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+
 }
 
 .service-card:hover .service-icon img {
   filter: brightness(0);
+  color: var(--color-highlight);
 }
 
 /* ===== Text ===== */

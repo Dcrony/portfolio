@@ -97,7 +97,7 @@ label {
   color: var(--color-bg-light);
   font-weight: 600;
   padding: 10px 25px;
-  border-radius: 25px;
+  border-radius: 10px;
   border: none;
   cursor: pointer;
   margin-top: 20px;
@@ -114,12 +114,12 @@ label {
 .form-status {
   background: transparent;
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 6px;
   font-size: 0.95rem;
   font-weight: 500;
   opacity: 0;
   animation: fadeIn 0.4s ease-in forwards;
-  padding: 8px 14px;
+  padding: 7px;
   border-radius: 8px;
   box-shadow: var(--shadow-soft);
   transition: all 0.3s ease;
@@ -176,7 +176,7 @@ label {
   color: var(--color-secondary);
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 5px;
 }
 
