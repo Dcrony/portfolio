@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "../css/portfolio.css";
 import dividerImg from "../assets/images/divider.png";
+import portfolio from "../assets/images/sty.png";
 import portfolio1 from "../assets/images/dct1.png";
 import portfolio2 from "../assets/images/supermarket.png";
 import portfolio3 from "../assets/images/oyinskin.png";
@@ -11,6 +12,17 @@ const portfolioItems = [
     id: 1,
     category: "WEB",
     title: "Portfolio Website",
+    image: portfolio,
+    tools: ["React", "Tailwindcss", "Node.js", "Express.js", "MongoDB"],
+    description:
+      "Tickispot is an event technology platform providing event creation, ticketing, live streaming, live chat, analytics and organizer management tools.",
+    link: "https://tickispot.pxxl.click",
+    source: "https://github.com/Dcrony/eventer",
+  },
+  {
+    id: 2,
+    category: "WEB",
+    title: "Portfolio Website",
     image: portfolio1,
     tools: ["React", "Boostrap"],
     description:
@@ -19,7 +31,7 @@ const portfolioItems = [
     source: "https://github.com/Dcrony/portfoliome",
   },
   {
-    id: 2,
+    id: 3,
     category: "APP",
     title: "Supermarket POS App",
     image: portfolio2,
@@ -30,7 +42,7 @@ const portfolioItems = [
     source: "https://github.com/Dcrony/supermarket",
   },
   {
-    id: 3,
+    id: 4,
     category: "BRANDING",
     title: "Brand Identity",
     image: portfolio3,
@@ -40,7 +52,7 @@ const portfolioItems = [
     link: "https://oyeskin-natural.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     category: "BRANDING",
     title: "Brand Website",
     image: portfolio4,
