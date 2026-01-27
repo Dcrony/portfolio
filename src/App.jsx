@@ -90,8 +90,6 @@ function App() {
 
         <Testimonials />
 
-        <Journal />
-
         <Contact />
 
         {/* End site-inner */}
