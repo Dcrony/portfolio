@@ -10,7 +10,7 @@ import portfolio4 from "../assets/images/wuraola.png";
 const portfolioItems = [
   {
     id: 1,
-    category: "WEB",
+    category: "web",
     title: "TickiSpot",
     image: portfolio,
     tools: ["React", "Tailwindcss", "Node.js", "Express.js", "MongoDB"],
@@ -21,7 +21,7 @@ const portfolioItems = [
   },
   {
     id: 2,
-    category: "WEB",
+    category: "web",
     title: "Portfolio Website",
     image: portfolio1,
     tools: ["React", "Boostrap"],
@@ -32,7 +32,7 @@ const portfolioItems = [
   },
   {
     id: 3,
-    category: "APP",
+    category: "app",
     title: "Supermarket POS App",
     image: portfolio2,
     tools: ["PHP", "MySQL", "CSS"],
@@ -43,7 +43,7 @@ const portfolioItems = [
   },
   {
     id: 4,
-    category: "BRANDING",
+    category: "branding",
     title: "Brand Identity",
     image: portfolio3,
     tools: ["HTML", "CSS", "Boostrap", "JavaScript"],
@@ -53,7 +53,7 @@ const portfolioItems = [
   },
   {
     id: 5,
-    category: "BRANDING",
+    category: "branding",
     title: "Brand Website",
     image: portfolio4,
     tools: ["Figma", "Tailwind CSS", "JavaScript"],

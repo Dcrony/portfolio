@@ -24,7 +24,7 @@
 
 .filter-btn {
   background: var(--color-highlight);
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-secondary);
   color: var(--color-text-light);
   padding: 8px 18px;
   border-radius: 10px;
@@ -37,8 +37,9 @@
 .filter-btn:hover,
 .filter-btn.active {
   background: var(--color-secondary);
-  color: #0b0c10;
+  color: var(--color-bg-light);
   transform: translateY(-2px);
+  border-color: var(--color-bg-card);
 }
 
 /* ===== Portfolio Grid ===== */
