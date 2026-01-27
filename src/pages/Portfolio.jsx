@@ -11,7 +11,7 @@ const portfolioItems = [
   {
     id: 1,
     category: "WEB",
-    title: "Portfolio Website",
+    title: "TickiSpot",
     image: portfolio,
     tools: ["React", "Tailwindcss", "Node.js", "Express.js", "MongoDB"],
     description:
