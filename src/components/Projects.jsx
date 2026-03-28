@@ -1,0 +1,111 @@
+import React, { useState } from 'react';
+
+const Projects = () => {
+  const [filter, setFilter] = useState('All');
+  
+  const categories = ['All', 'Full-Stack', 'Frontend', 'E-commerce'];
+  
+  const projects = [
+    {
+      title: 'TickiSpot',
+      category: 'Full-Stack',
+      description: 'Event discovery platform for finding local events and community calendars.',
+      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop',
+      tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
+      demo: '#',
+      repo: '#'
+    },
+    {
+      title: 'Portfolio Website',
+      category: 'Frontend',
+      description: 'Personal portfolio showcasing projects and skills with modern design.',
+      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
+      tags: ['React', 'Bootstrap'],
+      demo: '#',
+      repo: '#'
+    },
+    {
+      title: 'Supermarket POS App',
+      category: 'Full-Stack',
+      description: 'Point of Sale system for supermarkets with inventory management.',
+      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+      tags: ['PHP', 'MySQL', 'CSS'],
+      demo: '#',
+      repo: '#'
+    },
+    {
+      title: 'Brand Identity',
+      category: 'Frontend',
+      description: 'E-commerce website for organic skincare products with modern aesthetics.',
+      image: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=400&fit=crop',
+      tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+      demo: '#',
+      repo: '#'
+    },
+    {
+      title: 'Wuraola Beauty',
+      category: 'E-commerce',
+      description: 'Beauty and wellness destination website with booking system.',
+      image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop',
+      tags: ['Figma', 'Tailwind CSS', 'JavaScript'],
+      demo: '#',
+      repo: '#'
+    }
+  ];
+
+  const filteredProjects = filter === 'All' 
+    ? projects 
+    : projects.filter(p => p.category === filter);
+
+  return (
+    <section id="projects">
+      <div className="section-header">
+        <h2 className="section-title">Featured Projects</h2>
+        <p className="section-subtitle">Selected work from my portfolio</p>
+      </div>
+      
+      <div className="projects-filter">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            className={`filter-btn ${filter === cat ? 'active' : ''}`}
+            onClick={() => setFilter(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <div className="projects-grid">
+        {filteredProjects.map((project, index) => (
+          <div key={index} className="project-card">
+            <img src={project.image} alt={project.title} className="project-image" />
+            <div className="project-content">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div className="project-tags">
+                {project.tags.map((tag, i) => (
+                  <span key={i} className="project-tag">{tag}</span>
+                ))}
+              </div>
+              <div className="project-links">
+                <a href={project.demo} className="project-link" title="Live Demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/>
+                  </svg>
+                </a>
+                <a href={project.repo} className="project-link" title="Source Code">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Projects;

@@ -1,101 +1,62 @@
-import { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // AOS styles (you can customize via your own CSS)
-// import emailjs from "@emailjs/browser"; // optional (install @emailjs/browser) — or keep CDN
-
-import Navbar from "./components/Navbar";
-import Hero from "./pages/Hero";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Portfolio from "./pages/Portfolio";
-import Skills from "./pages/Skills";
-import Testimonials from "./pages/Testimonials";
-import Journal from "./pages/Journal";
-import Contact from "./pages/Contact";
-import Footer from "./components/Footer";
+import React, { useState, useEffect } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-  // Global UI state: offcanvas/mobile menu
-  const [offcanvasOpen, setOffcanvasOpen] = useState(false);
-
-  // Helper to toggle mobile menu from any component via props
-  const toggleOffcanvas = () => setOffcanvasOpen((v) => !v);
-  const closeOffcanvas = () => setOffcanvasOpen(false);
-
-  const [loading, setLoading] = useState(true);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    // setLoading(true);
-
-    // Initialize AOS for scroll animations #
-    AOS.init({
-      duration: 800,
-      easing: "ease",
-      once: true,
-      offset: -100,
-    });
-
-    if (offcanvasOpen) {
-      document.body.classList.add("offcanvas");
-    } else {
-      document.body.classList.remove("offcanvas");
-    }
-
-    return () => {
-      AOS.refresh();
-      document.body.classList.remove("offcanvas");
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
     };
-  }, [offcanvasOpen]);
-
-  {
-    /* Loader overlay & site loader elements kept so CSS animations still work */
-  }
-  // if (loading) {
-  //   return (
-  //     <div>
-  //       <div id="unslate_co--overlayer"></div>
-  //       <div className="site-loader-wrap">
-  //         <div className="site-loader"></div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <div className="unslate_co--site-wrap">
-      <div className="unslate_co--site-inner">
-        {/* Lines background  */}
-        <div className="lines-wrap">
-          <div className="lines-inner">
-            <div className="lines"></div>
-          </div>
+    <div className="app">
+      <div className="geometric-bg">
+        <div className="wireframe wireframe-1"></div>
+        <div className="wireframe wireframe-2"></div>
+        <div className="wireframe wireframe-3"></div>
+        <div className="wireframe wireframe-4"></div>
+        <div className="particles">
+          {[...Array(20)].map((_, i) => (
+            <span key={i} className="particle"></span>
+          ))}
         </div>
-
-        {/* Navbar receives toggle props so it can open/close mobile menu */}
-        <Navbar
-          offcanvasOpen={offcanvasOpen}
-          toggleOffcanvas={toggleOffcanvas}
-          closeOffcanvas={closeOffcanvas}
-        />
-
-        <Hero />
-
-        <About />
-
-        <Portfolio />
-
-        <Services />
-
-        <Skills />
-
-        <Testimonials />
-
-        <Contact />
-
-        {/* End site-inner */}
       </div>
-
+      <Navbar scrolled={scrolled} />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Projects />
+        <Skills />
+        <Testimonials />
+        <Contact />
+      </main>
       <Footer />
+      <div className="dev-tools-hint">
+        <span className="terminal-icon">&gt;_</span>
+        <span>Dev tools detected. Press F12 for secrets...</span>
+      </div>
+      <div className="search-hint">
+        <span className="cmd-icon">⌘</span>
+        <span>Press ⌘K to search</span>
+      </div>
+      <a href="#contact" className="chat-bubble">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+      </a>
     </div>
   );
 }
