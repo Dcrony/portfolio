@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+// import p1 from '../assets/images/p1.jpg';
+import p2 from '../assets/images/efSvc.jpg';
+import p3 from '../assets/images/rcBxw.jpg';
+import p4 from '../assets/images/jmkm3.jpg';
+import p5 from '../assets/images/ZEGNs.jpg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
@@ -12,14 +17,14 @@ const Projects = () => {
       description: 'Event discovery platform for finding local events and community calendars.',
       image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop',
       tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
-      demo: '#',
+      demo: 'https://tickispot.vercel.app/',
       repo: '#'
     },
     {
       title: 'Portfolio Website',
       category: 'Frontend',
       description: 'Personal portfolio showcasing projects and skills with modern design.',
-      image: 'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop',
+      image: p2,
       tags: ['React', 'Bootstrap'],
       demo: '#',
       repo: '#'
@@ -28,27 +33,27 @@ const Projects = () => {
       title: 'Supermarket POS App',
       category: 'Full-Stack',
       description: 'Point of Sale system for supermarkets with inventory management.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
+      image: p3,
       tags: ['PHP', 'MySQL', 'CSS'],
       demo: '#',
       repo: '#'
     },
     {
       title: 'Brand Identity',
-      category: 'Frontend',
+      category: 'E-commerce',
       description: 'E-commerce website for organic skincare products with modern aesthetics.',
-      image: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=600&h=400&fit=crop',
+      image: p4,
       tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
-      demo: '#',
+      demo: 'https://oyeskin-natural.vercel.app/',
       repo: '#'
     },
     {
       title: 'Wuraola Beauty',
-      category: 'E-commerce',
+      category: 'Frontend',
       description: 'Beauty and wellness destination website with booking system.',
-      image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop',
+      image: p5,
       tags: ['Figma', 'Tailwind CSS', 'JavaScript'],
-      demo: '#',
+      demo: 'https://wuraolahouseofbeauty.vercel.app/',
       repo: '#'
     }
   ];

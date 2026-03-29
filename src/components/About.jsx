@@ -18,7 +18,7 @@ const About = () => {
         <h2>About Me</h2>
         <p>
           Hi, I'm <strong>Ibrahim Abdulmajeed</strong> — a passionate Full-Stack Web Developer 
-          with 2+ years of experience crafting user-focused and scalable web solutions.
+          with 3+ years of experience crafting user-focused and scalable web solutions.
         </p>
         <p>
           My journey began in secondary school, where learning HTML at a local computer center 
@@ -26,7 +26,7 @@ const About = () => {
           coding and problem-solving.
         </p>
         <p>
-          In 2024, I took a bold step and enrolled in an online full-stack bootcamp after 
+          In 2023, I took a bold step and enrolled in an online full-stack bootcamp after 
           graduation. Since then, I've worked on multiple real-world projects, continuously 
           sharpening my skills and building impactful products.
         </p>
