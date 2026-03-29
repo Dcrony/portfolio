@@ -1,5 +1,4 @@
 
-import dividerImg from "../assets/images/divider.png";
 
 export default function Skills() {
   const frontendSkills = [
@@ -30,7 +29,6 @@ export default function Skills() {
   return (
     <section className="skills-section" id="skills-section">
       <h2 className="section-title">My Skills</h2>
-      <img src={dividerImg} alt="divider" className="divider-img" />
       <div className="skills-grid">
         <SkillCard title="Frontend Development" skills={frontendSkills} />
         <SkillCard title="Backend Development" skills={backendSkills} />
