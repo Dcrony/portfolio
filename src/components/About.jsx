@@ -1,4 +1,5 @@
 import React from 'react';
+import dct from '../assets/images/dct.jpg';
 
 const About = () => {
   const techStack = [
@@ -10,7 +11,7 @@ const About = () => {
     <section className="about" id="about">
       <div className="about-image">
         <img 
-          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" 
+          src={dct} 
           alt="Ibrahim Abdulmajeed"
         />
       </div>

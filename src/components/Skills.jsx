@@ -1,4 +1,4 @@
-import "../css/skill.css";
+
 import dividerImg from "../assets/images/divider.png";
 
 export default function Skills() {

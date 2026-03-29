@@ -26,8 +26,8 @@ const Projects = () => {
       description: 'Personal portfolio showcasing projects and skills with modern design.',
       image: p2,
       tags: ['React', 'Bootstrap'],
-      demo: '#',
-      repo: '#'
+      demo: 'https://dcrony.vercel.app/',
+      repo: 'https://github.com/Dcrony/portfolio'
     },
     {
       title: 'Supermarket POS App',
@@ -35,8 +35,8 @@ const Projects = () => {
       description: 'Point of Sale system for supermarkets with inventory management.',
       image: p3,
       tags: ['PHP', 'MySQL', 'CSS'],
-      demo: '#',
-      repo: '#'
+      demo: 'https://supermarketpos.pxxl.click/',
+      repo: 'https://github.com/Dcrony/supermarket'
     },
     {
       title: 'Brand Identity',
@@ -45,7 +45,7 @@ const Projects = () => {
       image: p4,
       tags: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
       demo: 'https://oyeskin-natural.vercel.app/',
-      repo: '#'
+      repo: 'https://github.com/Dcrony/Oyeskin-EC'
     },
     {
       title: 'Wuraola Beauty',
@@ -54,7 +54,7 @@ const Projects = () => {
       image: p5,
       tags: ['Figma', 'Tailwind CSS', 'JavaScript'],
       demo: 'https://wuraolahouseofbeauty.vercel.app/',
-      repo: '#'
+      repo: 'https://github.com/Dcrony/Wuraolahouseofbeauty'
     }
   ];
 
