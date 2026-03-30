@@ -125,6 +125,7 @@ body {
 .particle:nth-child(8) { left: 80%; top: 20%; animation-delay: 7s; }
 .particle:nth-child(9) { left: 90%; top: 80%; animation-delay: 8s; }
 .particle:nth-child(10) { left: 15%; top: 50%; animation-delay: 9s; }
+.particle:nth-child(11) { left: 25%; top: 30%; animation-delay: 9s; }
 
 @keyframes float {
   0%, 100% { transform: translateY(0) rotate(45deg); }
