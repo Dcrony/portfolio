@@ -312,7 +312,7 @@ body {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 80%;
+  width: 0%;
   max-width: 320px;
   height: 100vh;
   background: var(--bg-secondary);
@@ -326,6 +326,9 @@ body {
 
 .mobile-menu.active {
   right: 0;
+  width: 80%;
+
+
 }
 
 .mobile-menu-header {
