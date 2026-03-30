@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // import p1 from '../assets/images/p1.jpg';
 import p2 from '../assets/images/efSvc.jpg';
 import p3 from '../assets/images/rcBxw.jpg';
-import p4 from '../assets/images/jmkm3.jpg';
+import p4 from '../assets/images/Jmkm3.jpg';
 import p5 from '../assets/images/ZEGNs.jpg';
 
 const Projects = () => {
