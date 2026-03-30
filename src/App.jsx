@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import SEO from './components/SEO';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,6 +22,7 @@ function App() {
 
   return (
     <div className="app">
+      <SEO/>
       <div className="geometric-bg">
         <div className="wireframe wireframe-1"></div>
         <div className="wireframe wireframe-2"></div>
