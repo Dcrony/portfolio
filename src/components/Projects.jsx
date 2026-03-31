@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-// import p1 from '../assets/images/p1.jpg';
+import p1 from '../assets/images/mHSFj.jpg';
 import p2 from '../assets/images/efSvc.jpg';
 import p3 from '../assets/images/rcBxw.jpg';
 import p4 from '../assets/images/Jmkm3.jpg';
@@ -15,7 +15,7 @@ const Projects = () => {
       title: 'TickiSpot',
       category: 'Full-Stack',
       description: 'Event discovery platform for finding local events and community calendars.',
-      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop',
+      image: p1,
       tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
       demo: 'https://tickispot.vercel.app/',
       repo: '#'

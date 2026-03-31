@@ -1,0 +1,69 @@
+<svg width="400" height="320" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGradient" x1="80" y1="80" x2="280" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="100%" stop-color="#ff00aa"/>
+    </linearGradient>
+    
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main D Shape with Neon Glow -->
+  <path 
+    d="M120 80 
+       Q80 80 80 140 
+       Q80 200 120 240 
+       Q180 240 220 200 
+       Q260 160 260 140 
+       Q260 100 220 80 
+       Q180 60 120 80 Z" 
+    fill="none" 
+    stroke="url(#neonGradient)" 
+    stroke-width="48" 
+    stroke-linejoin="round"
+    filter="url(#glow)"/>
+
+  <!-- Inner Circuit Details -->
+  <path 
+    d="M130 110 
+       Q95 115 95 150 
+       Q95 185 130 190" 
+    fill="none" 
+    stroke="#ffffff" 
+    stroke-width="12" 
+    stroke-linejoin="round"/>
+
+  <!-- Circuit Nodes and Lines -->
+  <!-- Left side nodes -->
+  <circle cx="105" cy="135" r="8" fill="#00f5ff"/>
+  <circle cx="105" cy="175" r="8" fill="#00f5ff"/>
+  
+  <!-- Connecting circuit lines -->
+  <path 
+    d="M115 135 L145 145 L170 145" 
+    fill="none" 
+    stroke="#a5f3fc" 
+    stroke-width="6" 
+    stroke-linecap="round"/>
+  
+  <path 
+    d="M115 175 L140 165 L165 165" 
+    fill="none" 
+    stroke="#a5f3fc" 
+    stroke-width="6" 
+    stroke-linecap="round"/>
+
+  <!-- Small inner accent line -->
+  <path 
+    d="M150 155 Q180 155 200 170" 
+    fill="none" 
+    stroke="#ffffff" 
+    stroke-width="8" 
+    stroke-linejoin="round"/>
+</svg>
