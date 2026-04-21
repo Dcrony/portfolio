@@ -2,9 +2,8 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ 
-  title = 'Dcrony | Full-Stack Web Developer',
-  description = 'Ibrahim Abdulmajeed (Dcrony) - Full-Stack Web Developer specializing in MERN stack, React, Node.js, and modern web applications. 3+ years experience building scalable solutions.',
-  keywords = 'Dcrony, Ibrahim Abdulmajeed, ibrahim Abdulmajeed Damilola, Full-Stack Developer, MERN Stack, React Developer, Node.js Developer, Web Developer Nigeria, JavaScript Developer, Portfolio',
+  title = 'Dcrony (Ibrahim Abdulmajeed) – Full-Stack Developer & Founder of TickiSpot',
+  dkeywords = 'Dcrony, Ibrahim Abdulmajeed, TickiSpot founder, Full-Stack Developer Nigeria, MERN stack developer, React developer, Node.js developer, event ticketing platform founder, Nigerian tech founder',
   image = 'https://dcrony.vercel.app/og-image.jpg',
   url = 'https://dcrony.vercel.app',
   type = 'website'
