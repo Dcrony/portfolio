@@ -577,6 +577,13 @@ body {
   background-clip: text;
 }
 
+.hero-founder {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
 .hero-subtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);

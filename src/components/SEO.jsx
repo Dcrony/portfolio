@@ -3,7 +3,8 @@ import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ 
   title = 'Dcrony (Ibrahim Abdulmajeed) – Full-Stack Developer & Founder of TickiSpot',
-  dkeywords = 'Dcrony, Ibrahim Abdulmajeed, TickiSpot founder, Full-Stack Developer Nigeria, MERN stack developer, React developer, Node.js developer, event ticketing platform founder, Nigerian tech founder',
+  description = 'Ibrahim Abdulmajeed (Dcrony) is a Full-Stack Web Developer and Founder of TickiSpot, a modern event ticketing and management platform. متخصص in MERN stack, React, and scalable web applications.',
+  keywords = 'Dcrony, Ibrahim Abdulmajeed, TickiSpot founder, Full-Stack Developer Nigeria, MERN stack developer, React developer, Node.js developer, event ticketing platform founder, Nigerian tech founder',
   image = 'https://dcrony.vercel.app/og-image.jpg',
   url = 'https://dcrony.vercel.app',
   type = 'website'

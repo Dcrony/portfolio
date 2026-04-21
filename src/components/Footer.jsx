@@ -45,11 +45,11 @@ const Footer = () => {
                 <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
               </svg>
             </a>
-            <a href="https://tiktok.com/codewithdcrony_" className="social-link" aria-label="Tiktok">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
-              </svg>
-            </a>
+            <a href="https://www.tiktok.com/@codewithdcrony_" className="social-link" aria-label="TikTok">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12.75 2h2.5c.2 1.6 1.4 3.1 3 3.7v2.6c-1.3-.1-2.5-.5-3.5-1.2v6.8c0 3.4-2.8 6.1-6.2 6.1S2.3 17.3 2.3 13.9s2.8-6.1 6.2-6.1c.4 0 .8 0 1.2.1v2.6c-.4-.1-.8-.2-1.2-.2-1.9 0-3.5 1.5-3.5 3.4s1.6 3.4 3.5 3.4 3.5-1.5 3.5-3.4V2z"/>
+  </svg>
+</a>
           </div>
           <p style={{marginTop: '16px', color: 'var(--text-muted)', fontSize: '0.9rem'}}>
             Available for freelance projects
