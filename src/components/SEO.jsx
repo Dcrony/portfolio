@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 const SEO = ({ 
   title = 'Dcrony | Full-Stack Web Developer',
   description = 'Ibrahim Abdulmajeed (Dcrony) - Full-Stack Web Developer specializing in MERN stack, React, Node.js, and modern web applications. 3+ years experience building scalable solutions.',
-  keywords = 'Dcrony, Ibrahim Abdulmajeed, Full-Stack Developer, MERN Stack, React Developer, Node.js Developer, Web Developer Nigeria, JavaScript Developer, Portfolio',
+  keywords = 'Dcrony, Ibrahim Abdulmajeed, ibrahim Abdulmajeed Damilola, Full-Stack Developer, MERN Stack, React Developer, Node.js Developer, Web Developer Nigeria, JavaScript Developer, Portfolio',
   image = 'https://dcrony.vercel.app/og-image.jpg',
   url = 'https://dcrony.vercel.app',
   type = 'website'
@@ -41,44 +41,69 @@ const SEO = ({
       <meta name="twitter:creator" content="@codewithdcrony" />
       
       {/* Structured Data / JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
+     <script type="application/ld+json">
+{JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "name": "Ibrahim Abdulmajeed",
+      "alternateName": "Dcrony",
+      "url": "https://dcrony.vercel.app",
+      "image": image,
+      "jobTitle": "Full-Stack Web Developer & Founder",
+      "description":
+        "Ibrahim Abdulmajeed (Dcrony) is a Full-Stack Web Developer and Founder of TickiSpot, an event ticketing and management platform.",
+      "email": "ibrahimabdulmajeed14@gmail.com",
+      "telephone": "+2349039492387",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "NG"
+      },
+      "sameAs": [
+        "https://github.com/Dcrony",
+        "https://x.com/codewithdcrony",
+        "https://linkedin.com/in/ibrahim-abdulmajeed",
+        "https://tiktok.com/codewithdcrony_"
+      ],
+      "knowsAbout": [
+        "React.js",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "JavaScript",
+        "Startup Development",
+        "Event Technology"
+      ],
+      "founderOf": {
+        "@type": "Organization",
+        "name": "TickiSpot",
+        "url": "https://tickispot.com"
+      }
+    },
+
+    {
+      "@type": "Organization",
+      "name": "TickiSpot",
+      "url": "https://tickispot.com",
+      "logo": "https://tickispot.com/logo.png",
+      "founders": [
+        {
           "@type": "Person",
-          "name": "Ibrahim Abdulmajeed",
-          "alternateName": "Dcrony",
-          "url": "https://dcrony.vercel.app",
-          "jobTitle": "Full-Stack Web Developer",
-          "description": description,
-          "image": image,
-          "email": "ibrahimabdulmajeed14@gmail.com",
-          "telephone": "+234-903-949-2387",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Abeokuta",
-            "addressCountry": "NG"
-          },
-          "sameAs": [
-            "https://github.com/Dcrony",
-            "https://x.com/codewithdcrony",
-            "https://linkedin.com/in/ibrahim-abdulmajeed"
-          ],
-          "knowsAbout": [
-            "React.js",
-            "Node.js",
-            "MongoDB",
-            "Express.js",
-            "JavaScript",
-            "Tailwind CSS",
-            "PHP",
-            "MySQL"
-          ],
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Freelance"
-          }
-        })}
-      </script>
+          "name": "Ibrahim Abdulmajeed"
+        },
+        {
+          "@type": "Person",
+          "name": "OLarenwaju Oluwashinnayomi"
+        }
+      ],
+      "sameAs": [
+        "https://tickispot.com"
+      ]
+    }
+  ]
+})}
+</script>
     </Helmet>
   );
 };
