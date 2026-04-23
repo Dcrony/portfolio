@@ -4,6 +4,7 @@ import p2 from '../assets/images/efSvc.jpg';
 import p3 from '../assets/images/rcBxw.jpg';
 import p4 from '../assets/images/Jmkm3.jpg';
 import p5 from '../assets/images/ZEGNs.jpg';
+import p6 from '../assets/images/stripess.png';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
@@ -28,6 +29,15 @@ const Projects = () => {
       tags: ['React', 'Bootstrap'],
       demo: 'https://dcrony.vercel.app/',
       repo: 'https://github.com/Dcrony/portfolio'
+    },
+    {
+      title: 'Stripe Dashboard Clone',
+      category: 'Frontend',
+      description: 'Scripe full responsive and interative admin dashboard clone.',
+      image: p6,
+      tags: ['HTML', 'Tailwind CSS', 'Font Awesome'],
+      demo: 'https://stripe_dashboard_clone.pxxl.click/',
+      repo: 'https://github.com/Dcrony/stripe_dashboard_clone'
     },
     {
       title: 'Supermarket POS App',
