@@ -4,7 +4,7 @@ import p2 from '../assets/images/efSvc.jpg';
 import p3 from '../assets/images/rcBxw.jpg';
 import p4 from '../assets/images/Jmkm3.jpg';
 import p5 from '../assets/images/ZEGNs.jpg';
-import p6 from '../assets/images/stripess.png';
+import p6 from '../assets/images/scripess.png';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
