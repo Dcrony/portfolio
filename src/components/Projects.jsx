@@ -36,7 +36,7 @@ const Projects = () => {
       description: 'Scripe full responsive and interative admin dashboard clone.',
       image: p6,
       tags: ['HTML', 'Tailwind CSS', 'Font Awesome'],
-      demo: 'https://stripe_dashboard_clone.pxxl.click/',
+      demo: 'https://stripedashboardclone.pxxl.click/',
       repo: 'https://github.com/Dcrony/stripe_dashboard_clone'
     },
     {
