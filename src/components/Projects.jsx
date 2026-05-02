@@ -18,7 +18,7 @@ const Projects = () => {
       description: 'Event discovery platform for finding local events and community calendars.',
       image: p1,
       tags: ['React', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB'],
-      demo: 'https://tickispot.vercel.app/',
+      demo: 'https://tickispot.com/',
       repo: '#'
     },
     {
