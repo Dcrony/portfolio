@@ -39,12 +39,10 @@ const ExperiencePage = () => (
       description="Professional experience building scalable software products, SaaS platforms and modern web applications."
     />
 
-    <div className="page-header">
       <SectionHeader
         title="Experience"
         subtitle="Building products that combine business value with scalable engineering."
       />
-    </div>
 
     <section className="experience-summary">
       <p>

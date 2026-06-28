@@ -14,6 +14,7 @@ import ContactPage from './pages/ContactPage';
 import ResumePage from './pages/ResumePage';
 import NotFoundPage from './pages/NotFoundPage';
 import './App.css';
+import AchievementsPage from './pages/AchievementsPage';
 
 function App() {
   const { theme, toggleTheme } = useTheme();
@@ -31,6 +32,7 @@ function App() {
             <Route path="services" element={<ServicesPage />} />
             <Route path="experience" element={<ExperiencePage />} />
             <Route path="github" element={<GitHubPage />} />
+            <Route path="achievements" element={<AchievementsPage />} />
             <Route path="contact" element={<ContactPage />} />
             <Route path="resume" element={<ResumePage />} />
             <Route path="*" element={<NotFoundPage />} />

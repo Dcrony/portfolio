@@ -28,13 +28,13 @@ const Projects = ({ preview = false }) => {
 
   return (
     <section id="projects" className="projects-section">
-     title={preview ? "Featured Products" : "Projects"}
+     <SectionHeader title={preview ? "Featured Products" : "Projects"}
 
 subtitle={
 preview
 ? "Production-ready applications solving real business problems."
 : "A collection of SaaS platforms, dashboards, AI applications and business software built with modern technologies."
-}
+} />
 
       {!preview && (
         <div className="projects-controls">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import { Github, Award, FileText } from 'lucide-react';
+import { Github, Award, FileText, BookOpen } from 'lucide-react';
 import ThemeToggle from '../components/ThemeToggle';
 
 const Navbar = ({ theme, toggleTheme }) => {
@@ -12,13 +12,13 @@ const Navbar = ({ theme, toggleTheme }) => {
     { name: "Home", to: "/" },
     { name: "About", to: "/about" },
     { name: "Projects", to: "/projects" },
-    { name: "Case Studies", to: "/case-studies" },
     { name: "Services", to: "/services" },
     { name: "Experience", to: "/experience" },
   ];
 
   // Icon-only links — secondary navigation, saves horizontal space in the pill
   const iconLinks = [
+    { name: "Case Studies", to: "/case-studies", icon: BookOpen },
     { name: "Achievements", to: "/achievements", icon: Award },
     { name: "GitHub", to: "/github", icon: Github },
     { name: "Resume", to: "/resume", icon: FileText },

@@ -29,20 +29,10 @@ const HomePage = () => {
       </section>
 
       <section className="section-preview">
-        <SectionHeader
-          title="Services"
-          subtitle="Helping businesses build scalable software products."
-        />
-        <Services />
+        <Services preview />
       </section>
 
-      <section className="section-preview">
-        <SectionHeader
-          title="Technology Stack"
-          subtitle="Technologies I use to build modern software."
-        />
-        <Skills />
-      </section>
+
 
       <section className="section-preview">
         <Testimonials preview />

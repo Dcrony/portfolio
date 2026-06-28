@@ -12,12 +12,11 @@ const CaseStudiesPage = () => {
         description="Explore detailed breakdowns of SaaS platforms, architecture decisions and engineering challenges solved by Ibrahim Abdulmajeed."
       />
 
-      <div className="page-header">
+
         <SectionHeader
           title="Case Studies"
           subtitle="A closer look at the engineering decisions, architecture and product thinking behind my software projects."
         />
-      </div>
 
       <div className="study-grid">
         {caseStudies.map((study) => (

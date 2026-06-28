@@ -15,14 +15,6 @@ const AboutPage = () => {
         description="Learn more about Ibrahim Abdulmajeed (Dcrony), a Full-Stack Product Engineer and Founder of TickiSpot."
       />
 
-      <div className="page-header">
-
-        <SectionHeader
-          title="About Me"
-          subtitle="Product-focused engineering, scalable software architecture and modern web development."
-        />
-
-      </div>
 
       <About />
 

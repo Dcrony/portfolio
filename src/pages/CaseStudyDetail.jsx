@@ -29,12 +29,10 @@ const CaseStudyDetail = () => {
         description={caseStudy.summary}
       />
 
-      <div className="page-header">
         <SectionHeader
           title={caseStudy.title}
           subtitle={caseStudy.summary}
         />
-      </div>
 
       <Section title="The Problem">
         {caseStudy.problem}

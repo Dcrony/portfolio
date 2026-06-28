@@ -1,3 +1,4 @@
+import { Github, Play } from 'lucide-react';
 import React from 'react';
 
 const ProjectCard = ({ project }) => (
@@ -19,10 +20,10 @@ const ProjectCard = ({ project }) => (
             </div>
             <div className="project-links">
                 <a href={project.demo} className="project-link" target="_blank" rel="noreferrer" aria-label={`Live demo for ${project.title}`}>
-                    Demo
+                    <Play size={17}/>
                 </a>
                 <a href={project.repo} className="project-link" target="_blank" rel="noreferrer" aria-label={`Repository for ${project.title}`}>
-                    Code
+                    <Github size={17} />
                 </a>
             </div>
         </div>

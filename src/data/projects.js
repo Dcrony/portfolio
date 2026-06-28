@@ -1,8 +1,9 @@
-import tickispotImage from "../assets/images/mHSFj.jpg";
-import portfolioImage from "../assets/images/efSvc.jpg";
+import tickispotImage from "../assets/images/TickiSpot.png";
+import portfolioImage from "../assets/images/porfolio.png";
+import kridImage from "../assets/images/krid.png";
 import dashboardImage from "../assets/images/scripess.png";
 import posImage from "../assets/images/rcBxw.jpg";
-import ecommerceImage from "../assets/images/Jmkm3.jpg";
+import ecommerceImage from "../assets/images/wura.png";
 import beautyImage from "../assets/images/ZEGNs.jpg";
 
 const projects = [
@@ -69,7 +70,7 @@ const projects = [
 
     featured: true,
 
-    image: dashboardImage,
+    image: kridImage,
 
     description:
       "A secure AI-powered voice communication platform featuring authentication, real-time calling and intelligent call management.",
@@ -86,7 +87,7 @@ const projects = [
       "WebRTC"
     ],
 
-    demo: "#",
+    demo: "https://kridtech-ai.vercel.app/",
 
     repo: "#",
 

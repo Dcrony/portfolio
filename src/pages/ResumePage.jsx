@@ -1,7 +1,7 @@
 import React from "react";
 import SEO from "./SEO";
 import SectionHeader from "../components/SectionHeader";
-import resumePdf from "../assets/images/dcronyresume.pdf";
+import resumePdf from "../assets/images/Ibrahim_Abdulmajeed_Resume.pdf";
 
 const ResumePage = () => {
   return (
@@ -11,12 +11,10 @@ const ResumePage = () => {
         description="Download the resume of Ibrahim Abdulmajeed (Dcrony), Full-Stack Product Engineer and Founder of TickiSpot."
       />
 
-      <div className="page-header">
         <SectionHeader
           title="Resume"
           subtitle="A summary of my experience, technical skills and software engineering journey."
         />
-      </div>
 
       <div className="resume-actions">
         <a
@@ -25,14 +23,7 @@ const ResumePage = () => {
           className="btn btn-primary"
         >
           Download Resume
-        </a>
-
-        <button
-          className="btn btn-secondary"
-          onClick={() => window.print()}
-        >
-          Print Resume
-        </button>
+        </a>        
       </div>
 
       <div className="resume-grid">

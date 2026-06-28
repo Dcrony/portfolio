@@ -1,5 +1,5 @@
 import React from "react";
-import dct from "../assets/images/dct.jpg";
+import dct from "../assets/images/dc.png";
 
 const About = () => {
 
