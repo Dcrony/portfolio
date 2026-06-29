@@ -1,4 +1,4 @@
-import tickispotImage from "../assets/images/TickiSpot.png";
+import tickispotImage from "../assets/images/Tickispot.png";
 import portfolioImage from "../assets/images/porfolio.png";
 import kridImage from "../assets/images/krid.png";
 import dashboardImage from "../assets/images/scripess.png";
