@@ -1,4 +1,5 @@
 import React from "react";
+import { Rocket, Lightbulb, Target, Trophy } from "lucide-react";
 import SEO from "./SEO";
 import About from "./About";
 import Skills from "./Skills";
@@ -24,7 +25,8 @@ const AboutPage = () => {
 
           <div className="about-card">
 
-            <h3>🚀 Development Philosophy</h3>
+            <h3> <Rocket size={20} strokeWidth={2} />
+ Development Philosophy</h3>
 
             <p>
               I believe software should solve real problems, remain easy to
@@ -35,7 +37,7 @@ const AboutPage = () => {
 
           <div className="about-card">
 
-            <h3>💡 Core Values</h3>
+            <h3<Lightbulb size={20} strokeWidth={2} /> Core Values</h3>
 
             <ul>
 
@@ -57,7 +59,8 @@ const AboutPage = () => {
 
           <div className="about-card">
 
-            <h3>🎯 Current Focus</h3>
+            <h3><Target size={20} strokeWidth={2} />
+ Current Focus</h3>
 
             <p>
               I'm currently focused on building SaaS platforms,
@@ -70,7 +73,8 @@ const AboutPage = () => {
 
           <div className="about-card">
 
-            <h3>🏆 Career Goal</h3>
+            <h3><Trophy size={20} strokeWidth={2} />
+Career Goal</h3>
 
             <p>
               To become a world-class Software Engineer building products
