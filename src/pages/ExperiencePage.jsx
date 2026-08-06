@@ -9,6 +9,12 @@ const experienceItems = [
     description:
       "Designed and built TickiSpot from the ground up using the MERN stack. Responsible for architecture, frontend, backend, authentication, database design, deployment and product strategy.",
   },
+{
+  title: "Mobile App Developer Intern — Kowi X Tech",
+  period: "Nov 2025 – Jan 2026",
+  description:
+    "Developed Amoura, a React Native dating application featuring swipe-based matching, JWT authentication, real-time functionality and Cloudinary image management. Collaborated with the development team using Git, Postman and Figma while building reusable mobile UI components and delivering production-ready features.",
+},
 
   {
     title: "Freelance Full-Stack Developer",
